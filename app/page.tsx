@@ -7,7 +7,7 @@ export default async function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24 ">
-      {data.map((item) => {
+      {data.concat(data).map((item) => {
         return (
           <div key={item.id} className="p-20">
             <h2 className="">{item.title}</h2>
