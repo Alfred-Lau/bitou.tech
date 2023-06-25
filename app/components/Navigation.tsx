@@ -3,7 +3,16 @@
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 
-export function Navigation({ navLinks }) {
+export type linkProp = {
+  name: string;
+  href: string;
+};
+
+export type NavigationProp = {
+  navLinks: linkProp[];
+};
+
+export function Navigation({ navLinks }: NavigationProp) {
   const pathname = usePathname();
 
   return (
