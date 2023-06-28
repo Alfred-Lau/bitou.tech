@@ -1,14 +1,11 @@
 import BlogList from './components/BlogList';
-import { Navigation } from './components/Navigation';
-import { useRouter } from 'next/navigation';
 
 export default async function Home() {
   return (
-    <main>
-      <div>
-        <Navigation navLinks={[]} />
-      </div>
-      <div className="flex min-h-screen flex-col items-center justify-between p-24 ">
+    <main className="max-w-[1280px] m-auto">
+      <div className=" h-[400px] bg-orange-400 rounded-[8px]"></div>
+      <div className="mt-[24px] ">
+        <h3 className="self-start text-[32px]">Latest Paper</h3>
         <BlogList />
       </div>
     </main>
