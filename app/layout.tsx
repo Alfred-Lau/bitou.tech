@@ -3,7 +3,7 @@ import Header from './components/Header';
 import './globals.css';
 
 export const metadata = {
-  title: 'PPB - Next.js',
+  title: '文档 - 笔头',
   description: '初始化项目',
 };
 
