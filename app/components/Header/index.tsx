@@ -2,8 +2,8 @@ import Link from 'next/link';
 
 export default function Header() {
   return (
-    <div className=" sticky h-20 bg-white top-0 ">
-      <div className="px-[20px] m-auto flex justify-between items-center h-full text-[#3B3C4A]">
+    <div className=" sticky h-[40px] md:h-20 bg-white top-0 ">
+      <div className="hidden px-[20px] m-auto md:flex justify-between items-center h-full text-[#3B3C4A]">
         <h1 className="text-2xl  leading-20">笔头</h1>
         <ul className="flex ">
           <li className="px-[20px] hover_text">
@@ -23,6 +23,9 @@ export default function Header() {
           <div>search</div>
           <div>切换主题</div>
         </div>
+      </div>
+      <div>
+        <div>logo</div>
       </div>
     </div>
   );
