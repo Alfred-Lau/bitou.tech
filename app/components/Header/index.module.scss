@@ -1,0 +1,23 @@
+@media (max-width: 768px) {
+  .header {
+    background: url('./../../../public/images/banner.png') no-repeat center
+      center;
+    height: 400px;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .header {
+    background: url('./../../../public/images/banner.png') no-repeat center
+      center;
+    height: 600px;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1025px) {
+  .header {
+    height: 88px;
+  }
+}
