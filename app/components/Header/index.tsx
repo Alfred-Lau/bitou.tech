@@ -18,19 +18,32 @@ export default function Header() {
         </div>
         <ul className="flex md:justify-between ">
           <li className="px-[20px] hover_text">
-            <Link href={'/'}> Home</Link>
+            <Link href={'/'}> 首页</Link>
           </li>
           <li className="px-[20px] hover_text">
-            <Link href={'/blog'}> Blog</Link>
+            <Link href={'/blog'}> 博客</Link>
           </li>
           <li className="px-[20px] hover_text">
-            <Link href={'/docs'}> Docs</Link>
+            <Link href={'/docs'}> 文档</Link>
           </li>
           <li className="px-[20px] hover_text">
-            <Link href={'/about'}> About</Link>
+            <Link href={'/about'}> 关于</Link>
           </li>
         </ul>
-        <div className="flex gap-[10px]"></div>
+        <div className="flex gap-[10px] justify-end">
+          <a
+            href={'https://work.bitou.tech/login'}
+            className="px-[20px] hover_text"
+          >
+            登录
+          </a>
+          <a
+            href={'https://work.bitou.tech/register'}
+            className="px-[20px] hover_text"
+          >
+            注册
+          </a>
+        </div>
       </div>
     </div>
   );

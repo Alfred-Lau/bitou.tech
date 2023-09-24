@@ -8,24 +8,23 @@ export default function Banner() {
     <div className={styles.banner}>
       <div className="h-[400px] md:flex md:items-center md:content-center md:flex-col md:pt-[88px]">
         <h1 className=" md:w-[744px] md:h-[67px] md:font-[700] md:text-[56px] md:leading-[66px] md:text-center">
-          Build Better Product
+          Dev Less, Content More
         </h1>
         <div className="w-[650px] text-center text-gray-900 text-opacity-70 text-xl font-normal font-['Poppins'] leading-9">
-          Powerful, self-serve product analytics to help you convert, engage,
-          and retain more users.
+          你的分享值得被看见
         </div>
         <div className="flex justify-center items-center h-full gap-[20px] ">
           <Link
             href="https://work.bitou.tech"
             className=" md:bg-blue-500 text-center w-[200px] bg-slate-100 px-[32px] py-[14px] rounded-[4px] text-[#fff] hover:bg-blue-800 hover:text-[#fff] transition-all duration-200 ease-in-out"
           >
-            Quick Start
+            快速开始
           </Link>
           <Link
             href="https://bitou.tech/docs"
             className=" md:bg-blue-500 text-center w-[200px] bg-slate-100 px-[32px] py-[14px] rounded-[4px] text-[#fff] hover:bg-blue-800 hover:text-[#fff] transition-all duration-200 ease-in-out"
           >
-            Learn More
+            了解更多
           </Link>
         </div>
       </div>
