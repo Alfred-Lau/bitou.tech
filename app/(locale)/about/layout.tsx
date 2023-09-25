@@ -10,7 +10,7 @@ export default function RootLayout({
 }) {
   return (
     <div className="flex">
-      <div className="w-200">left menu</div>
+      <div className="w-200 sticky top-[68px]">left menu</div>
       <div>{children}</div>
     </div>
   );

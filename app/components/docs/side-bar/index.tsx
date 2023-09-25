@@ -12,6 +12,6 @@ export default function SideBar(props: SideBarProps) {
 
 
   return (
-    <div>SideBar</div>
+    <div className='sticky top-[68px]'>SideBar</div>
   )
 }
