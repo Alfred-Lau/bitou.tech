@@ -1,6 +1,6 @@
 export const metadata = {
-  title: '来自页面内部的切换',
-  description: '初始化项目',
+  title: '博客 - 笔头',
+  description: '博客 - 笔头',
 };
 
 export default function RootLayout({

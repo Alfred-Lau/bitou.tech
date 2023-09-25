@@ -1,0 +1,8 @@
+@tailwind components;
+
+@layer components {
+  .container {
+    @apply mx-auto px-4;
+    max-width: 1340px;
+  }
+}

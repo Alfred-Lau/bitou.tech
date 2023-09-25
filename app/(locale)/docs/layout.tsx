@@ -1,6 +1,9 @@
+import SideBar from "@/app/components/docs/side-bar";
+import { getSidebar } from "@/lib/api-docs";
+
 export const metadata = {
-  title: '来自页面内部的切换',
-  description: '初始化项目',
+  title: '文档 - 笔头',
+  description: '文档 - 笔头',
 };
 
 export default function RootLayout({
@@ -8,9 +11,14 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const { docs } = getSidebar()
+
+
   return (
-    <div className="flex">
-      <div className="w-200">left menu</div>
+    <div className="container grid grid-cols-12">
+      <div className="col-span-3 h-[calc(100vh-40px)]">
+        <SideBar docs={docs}></SideBar>
+      </div>
       <div>{children}</div>
     </div>
   );
