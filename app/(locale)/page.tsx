@@ -1,5 +1,5 @@
-import BlogList from './components/BlogList';
-import Banner from './components/Banner';
+import BlogList from '@/app/components/BlogList';
+import Banner from '@/app/components/Banner';
 
 export default async function Home() {
   return (
