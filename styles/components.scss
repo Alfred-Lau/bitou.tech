@@ -1,8 +1,11 @@
+// scss 和  tailwindcss 结合 的典范
+@use './var';
+
 @tailwind components;
 
 @layer components {
   .container {
     @apply mx-auto px-4;
-    max-width: 1340px;
+    max-width: var.$container-width;
   }
 }
