@@ -3,7 +3,7 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: 'http',
+        protocol: 'https',
         hostname: 'bitou-tech.oss-cn-hangzhou.aliyuncs.com',
         port: '',
         pathname: '/**',

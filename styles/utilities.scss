@@ -1,0 +1,14 @@
+@tailwind utilities;
+
+@layer utilities {
+  .section_title {
+    @apply text-indigo-600 text-sm font-semibold uppercase leading-normal tracking-wide;
+  }
+  .section_summary {
+    @apply w-[604px] text-gray-900 text-[32px] font-bold font-['Poppins'] leading-[44.80px];
+  }
+
+  .section_description {
+    @apply text-gray-500;
+  }
+}

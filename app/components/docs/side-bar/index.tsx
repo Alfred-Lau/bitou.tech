@@ -1,17 +1,39 @@
-"use client"
+'use client';
 
-import React from 'react'
+import React from 'react';
+import items from './mock';
 
 export type SideBarProps = {
-  docs: any[]
+  docs: any[];
 };
 
 export default function SideBar(props: SideBarProps) {
-  const { docs } = props
-  console.log("🚀 ~ file: index.tsx:11 ~ SideBar ~ docs:", docs)
+  const { docs } = props;
+  console.log('🚀 ~ file: index.tsx:11 ~ SideBar ~ docs:', items);
 
+  const renderItems = (item: any) => {
+    if (item.children) {
+      return (
+        <li>
+          <h2>{item.label}</h2>
+          <ul>
+            {item.children.map((child: any) => {
+              return <li key={child.key}>{renderItems(child)}</li>;
+            })}
+          </ul>
+        </li>
+      );
+    }
+    return item.label;
+  };
 
   return (
-    <div className='sticky top-[68px]'>SideBar</div>
-  )
+    <div className="sticky top-[68px]">
+      <ul>
+        {items.map((item) => {
+          return <li key={item.key}>{renderItems(item)}</li>;
+        })}
+      </ul>
+    </div>
+  );
 }
