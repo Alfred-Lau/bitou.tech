@@ -1,4 +1,4 @@
-import { fetchArticles } from '@/app/api/article';
+import { fetchBlogs } from '@/app/api/blog';
 import React, { use } from 'react';
 import Image from 'next/image';
 
@@ -56,7 +56,7 @@ const defaultBlogs = [
 ];
 
 export default function BlogList() {
-  const { data: blogs = defaultBlogs } = use(fetchArticles());
+  const { data: blogs = defaultBlogs } = use(fetchBlogs());
 
   return (
     <div className="container mt-[40px]">
