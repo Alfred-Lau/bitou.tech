@@ -12,13 +12,12 @@ export default function Footer() {
             <ul className={styles.first}>
               {[
                 {
-                  title: '介绍',
+                  title: '系统状态',
                   children: [
-                    { title: '产品' },
-                    { title: '功能' },
-                    { title: '镜像' },
-                    { title: '案例' },
-                    { title: '下载' },
+                    { title: 'bitou', version: '0.1.0' },
+                    { title: 'bitou-writer', version: '0.1.0' },
+                    { title: 'bitou-cli', version: '0.1.0' },
+                    { title: 'bitou-tracer', version: '0.1.0' },
                   ],
                 },
                 {
@@ -47,7 +46,18 @@ export default function Footer() {
                       {item.children.map((item, index) => {
                         return (
                           <li key={index} className={styles.second_item}>
-                            <Link href={`${item.link}`}>{item.title}</Link>
+                            <Link href={`${item.link}`}>
+                              {item.title}{' '}
+                              {item.version && (
+                                <>
+                                  <Divider
+                                    type="vertical"
+                                    style={{ backgroundColor: '#fff' }}
+                                  />
+                                  {item.version}
+                                </>
+                              )}
+                            </Link>
                           </li>
                         );
                       })}
