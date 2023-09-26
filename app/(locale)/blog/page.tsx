@@ -2,8 +2,6 @@ import { getLocalBlogList } from '@/app/api/blog';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
-import Image from 'next/image';
-
 export type BlogType = {
   title: string;
   description: string;
@@ -27,11 +25,7 @@ export const metadata = {
   description: '博客 - 笔头',
 };
 
-export type BlogListProps = {
-  blogs: BlogType[];
-};
-
-export default function Blog(props: BlogListProps) {
+export default function Blog(props: any) {
   const { blogs } = getLocalBlogList();
 
   if (!blogs) return notFound();

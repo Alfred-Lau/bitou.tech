@@ -43,7 +43,7 @@ export default function Footer() {
                   <li key={index} className={styles.first_item}>
                     <h3 className={styles.first_title}>{item.title}</h3>
                     <ul className={styles.second}>
-                      {item.children.map((item, index) => {
+                      {item.children.map((item: any, index) => {
                         return (
                           <li key={index} className={styles.second_item}>
                             <Link href={`${item.link}`}>
