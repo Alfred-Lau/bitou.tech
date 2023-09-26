@@ -24,7 +24,7 @@ export default function RootLayout({
         </div>
         <div>
           <Image
-            src="/content/blog/postgres-vs-mysql/cover.webp"
+            src="/content/blog/1-12-1-new-features/gh-bb.webp"
             width={720}
             height={360}
             alt=""
