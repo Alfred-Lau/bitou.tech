@@ -1,6 +1,6 @@
 ---
 title: 'Bytebase 1.9.1 Deep Dive'
-author: Tianzhou
+author: Bitou
 published_at: 2022/12/20 17:21:21
 feature_image: /content/blog/1-9-1-new-features/1.9.1-banner.webp
 tags: Explanation

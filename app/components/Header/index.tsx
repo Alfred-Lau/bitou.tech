@@ -24,10 +24,13 @@ export default function Header() {
             <Link href={'/blog'}> 博客</Link>
           </li>
           <li className="px-[20px] hover_text">
+            <Link href={'/showcase'}> 案例</Link>
+          </li>
+          <li className="px-[20px] hover_text">
             <Link href={'/docs'}> 文档</Link>
           </li>
           <li className="px-[20px] hover_text">
-            <Link href={'/about'}> 关于</Link>
+            <a href={'https://github.com/Alfred-Lau'}> Github </a>
           </li>
         </ul>
         <div className="flex gap-[10px] justify-end">

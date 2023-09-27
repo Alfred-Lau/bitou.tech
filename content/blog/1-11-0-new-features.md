@@ -1,6 +1,6 @@
 ---
 title: 'Bytebase 1.11.0 Deep Dive'
-author: Tianzhou
+author: Bitou
 published_at: 2023/01/17 23:21:21
 feature_image: /content/blog/1-11-0-new-features/1-11-0-banner.webp
 tags: Explanation

@@ -1,6 +1,9 @@
-import { fetchBlogs } from '@/app/api/blog';
+import { fetchBlogs, getLocalBlogList } from '@/app/api/blog';
 import React, { use } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
+import { formatDateTime } from '@/utils/format';
+import { Avatar } from 'antd';
 
 const defaultBlogs = [
   {
@@ -56,7 +59,7 @@ const defaultBlogs = [
 ];
 
 export default function BlogList() {
-  const { data: blogs = defaultBlogs } = use(fetchBlogs());
+  const { blogs } = getLocalBlogList();
 
   return (
     <div className="container mt-[40px]">
@@ -66,21 +69,46 @@ export default function BlogList() {
         Creativity is a highfalutin word for the work I have to do between now
         and Tuesday.
       </div>
-      <div className="grid grid-cols-12">
-        {defaultBlogs?.map((blog: any) => {
+      <div className="grid grid-cols-12 gap-[20px]">
+        {blogs?.map((blog: any, index) => {
           return (
-            <div
-              className="col-span-4 h-[400px] p-[10px] hover:cursor-pointer hover:translate-y-[-10px] transition-all ease-in-out duration-300"
-              key={blog.id}
-            >
-              <div className="h-full mb-[10px] border-[1px] border-solid  rounded-[4px] p-[10px] wrap">
-                <Image src={blog.image} alt="blog" className="cover w-full" />
-                <h1 className="text-[24px] leading-[28px] pt-[50px] text-[#181A2A] ">
-                  {blog.title}
-                </h1>
-                <p className="text-[12px] break-words">{blog.content}</p>
-              </div>
-            </div>
+            blog && (
+              <Link
+                key={index}
+                href={`/blog/${blog.slug}`}
+                className="col-span-4 aspect-[1] overflow-hidden rounded-[8px] border border-gray-90  hover:border-gray-80 transition-colors duration-200 relative"
+              >
+                <img
+                  className="h-[260px] min-w-full object-contain"
+                  src={blog.feature_image}
+                  alt={blog.title}
+                  width={undefined}
+                  height={undefined}
+                />
+                <div className="md:p-[20px]">
+                  <div className="text-left text-violet-500 text-sm font-semibold font-['Poppins'] uppercase leading-normal tracking-wide">
+                    {blog.tags}
+                  </div>
+                  <div className=" text-gray-900 text-xl font-bold font-['Poppins'] leading-7">
+                    {blog.title}
+                  </div>
+                  <div className="line-clamp-3 text-gray-900 text-opacity-60 text-base font-normal font-['Poppins'] leading-7">
+                    {blog.description}
+                  </div>
+                  <div className="flex items-center my-[6px]">
+                    <Avatar />
+                    <div className="ml-[10px]">
+                      <div className="text-gray-900 text-sm font-semibold font-['Poppins'] leading-[25.20px]">
+                        {blog.author || 'bitou'}
+                      </div>
+                      <div className="text-gray-900 text-opacity-60 text-xs font-normal font-['Poppins'] leading-snug">
+                        {formatDateTime(blog.published_at)}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            )
           );
         })}
       </div>

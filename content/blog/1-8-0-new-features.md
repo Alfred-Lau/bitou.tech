@@ -1,6 +1,6 @@
 ---
 title: 'Bytebase 1.8.0 New Features Dive'
-author: Tianzhou
+author: Bitou
 published_at: 2022/11/22 17:21:21
 feature_image: /content/blog/1-8-0-new-features/1-8-0-new-feature-banner.webp
 tags: Explanation
