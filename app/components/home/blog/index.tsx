@@ -85,7 +85,7 @@ export default function BlogList() {
                   width={undefined}
                   height={undefined}
                 />
-                <div className="md:p-[20px]">
+                <div className=" p-[20px]">
                   <div className="text-left text-violet-500 text-sm font-semibold font-['Poppins'] uppercase leading-normal tracking-wide">
                     {blog.tags}
                   </div>

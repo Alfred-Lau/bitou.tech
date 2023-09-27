@@ -33,7 +33,7 @@ export default function Blog(props: any) {
   if (blogs.length === 0) return <div>暂无博客</div>;
 
   return (
-    <div className="md:grid md:grid-cols-12 md:gap-[20px] md:my-[40px]">
+    <div className=" grid  grid-cols-12  gap-[20px]  my-[40px]">
       {blogs.map((blog, index) => {
         return (
           blog && (
@@ -49,7 +49,7 @@ export default function Blog(props: any) {
                 width={undefined}
                 height={undefined}
               />
-              <div className="md:p-[20px]">
+              <div className=" p-[20px]">
                 <h2>{blog.title}</h2>
                 <div>{blog.description?.slice(0, 10)}</div>
                 <div>{blog.content?.slice(0, 21)}</div>

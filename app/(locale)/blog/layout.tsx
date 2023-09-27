@@ -12,10 +12,10 @@ export default function RootLayout({
 }) {
   return (
     <div className="container">
-      <div className="md:flex md:justify-between">
-        <div className="md:h-[400px] md:flex md:items-start md:flex-col md:justify-center md:w-[560px]">
-          <h3 className=" md:text-[40px]">Hit News</h3>
-          <p className="md:mt-[20px]">
+      <div className=" flex  justify-between">
+        <div className=" h-[400px]  flex  items-start  flex-col  justify-center  w-[560px]">
+          <h3 className="  text-[40px]">Hit News</h3>
+          <p className=" mt-[20px]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quaerat
             iste explicabo inventore recusandae saepe repudiandae iusto, natus
             dolor, harum vero molestiae sint, reiciendis quasi. Laboriosam odit

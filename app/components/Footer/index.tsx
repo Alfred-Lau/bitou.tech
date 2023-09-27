@@ -4,7 +4,7 @@ import styles from './index.module.scss';
 
 export default function Footer() {
   return (
-    <div className="flex flex-col justify-between items-center h-[500px] md:bg-[#121127] md:text-white">
+    <div className="flex flex-col justify-between items-center h-[500px]  bg-[#121127]  text-white">
       <div className={styles.footer}>
         <div className={styles.container}>
           <div className={styles.ads}>笔头，全流程的站点管理</div>

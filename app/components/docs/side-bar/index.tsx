@@ -8,9 +8,6 @@ export type SideBarProps = {
 };
 
 export default function SideBar(props: SideBarProps) {
-  const { docs } = props;
-  console.log('🚀 ~ file: index.tsx:11 ~ SideBar ~ docs:', items);
-
   const renderItems = (item: any) => {
     if (item.children) {
       return (
