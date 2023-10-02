@@ -35,7 +35,7 @@ export default function Header() {
         </ul>
         <div className="flex gap-[10px] justify-end">
           <a
-            href={'https://work.bitou.tech/login'}
+            href={'https://work.bitou.tech/login?redirect=%2Fhome'}
             className="px-[20px] hover_text"
           >
             登录
