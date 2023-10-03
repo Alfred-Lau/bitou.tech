@@ -48,7 +48,6 @@ export const getSidebar = (): {
     }
   });
 
-  const docs = [] as any;
   return {
     sidebar: getNestedSidebar(sidebar),
     expandedList: data.expand_section_list,

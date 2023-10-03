@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <div className="container grid grid-cols-12">
       <div className="col-span-3 h-[calc(100vh-40px)] ">
-        <SideBar docs={docs}></SideBar>
+        <SideBar sidebar={sidebar} expandedList={expandedList}></SideBar>
       </div>
       <div>{children}</div>
     </div>
