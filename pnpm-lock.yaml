@@ -34,6 +34,9 @@ dependencies:
   gray-matter:
     specifier: ^4.0.3
     version: 4.0.3
+  he:
+    specifier: ^1.2.0
+    version: 1.2.0
   next:
     specifier: ^13.5.2
     version: 13.5.2(react-dom@18.2.0)(react@18.2.0)(sass@1.68.0)
@@ -60,6 +63,9 @@ devDependencies:
   '@types/fs-extra':
     specifier: ^11.0.2
     version: 11.0.2
+  '@types/he':
+    specifier: ^1.2.1
+    version: 1.2.1
 
 packages:
 
@@ -462,6 +468,10 @@ packages:
     dependencies:
       '@types/jsonfile': 6.1.2
       '@types/node': 20.6.5
+    dev: true
+
+  /@types/he@1.2.1:
+    resolution: {integrity: sha512-CdNmJMcSqX1BiP3iSsWt+VgixndRIDGzWyaGpBnW3i5heATSk5bJu2j3buutsoBQNjyryqxaNpr8M7fRsGL15w==}
     dev: true
 
   /@types/json5@0.0.29:
@@ -1726,6 +1736,11 @@ packages:
     engines: {node: '>= 0.4.0'}
     dependencies:
       function-bind: 1.1.1
+    dev: false
+
+  /he@1.2.0:
+    resolution: {integrity: sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==}
+    hasBin: true
     dev: false
 
   /ignore@5.2.4:

@@ -11,7 +11,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const { docs } = getSidebar();
+  const { sidebar, expandedList } = getSidebar();
 
   return (
     <div className="container grid grid-cols-12">

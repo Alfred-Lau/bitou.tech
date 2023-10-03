@@ -5,4 +5,12 @@ declare namespace API {
     content: string;
     author: string;
   }
+
+  export type SidebarItem = {
+    title: string | null;
+    url: string | null;
+    depth: number;
+    children?: SidebarItem[];
+    path?: number[];
+  };
 }
