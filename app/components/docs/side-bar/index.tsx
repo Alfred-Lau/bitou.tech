@@ -32,7 +32,7 @@ export default function SideBar(props: SideBarProps) {
     <div className="sticky top-[68px]">
       <ul>
         {sidebar.map((item) => {
-          return <li key={item.key}>{renderItems(item)}</li>;
+          return <li key={item.url}>{renderItems(item)}</li>;
         })}
       </ul>
     </div>

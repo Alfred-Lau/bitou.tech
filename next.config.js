@@ -10,6 +10,15 @@ const nextConfig = {
       },
     ],
   },
+  redirects: async () => {
+    return [
+      {
+        source: '/docs',
+        destination: '/docs/introduction/what-is-bytebase/',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;
