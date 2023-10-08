@@ -53,3 +53,15 @@ export const getSidebar = (): {
     expandedList: data.expand_section_list,
   };
 };
+
+export const getDocDetail = (slug: string): API.DocDetail => {
+  const md = fs.readFileSync(
+    `${process.cwd()}/content/docs/${slug}.md`,
+    'utf-8'
+  );
+  const { data, content } = matter(md);
+  return {
+    ...data,
+    content,
+  } as API.DocDetail;
+};

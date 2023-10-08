@@ -18,7 +18,7 @@ export default function RootLayout({
       <div className="col-span-3 h-[calc(100vh-40px)] ">
         <SideBar sidebar={sidebar} expandedList={expandedList}></SideBar>
       </div>
-      <div>{children}</div>
+      {children}
     </div>
   );
 }

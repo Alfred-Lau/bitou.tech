@@ -13,4 +13,17 @@ declare namespace API {
     children?: SidebarItem[];
     path?: number[];
   };
+
+  export interface DocDetail {
+    title: string;
+    content: string;
+    description: string;
+    expand_section_list: string[];
+    author: string;
+    date: string;
+    slug: string;
+    feature_image: string;
+    breadcrumbs: SidebarItem[];
+    navigationLinks;
+  }
 }

@@ -5,7 +5,7 @@ expand_section_list: ['Introduction', 'Get Started']
 
 ## Introduction
 
-### [What is Bytebase](/introduction/what-is-bytebase)
+### [What is Bitou](/introduction/what-is-bitou)
 
 ### [Use Cases](/introduction/use-cases)
 

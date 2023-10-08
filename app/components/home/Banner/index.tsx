@@ -18,13 +18,13 @@ export default function Banner() {
         <div className="flex justify-center items-center h-full gap-[20px] ">
           <Link
             href="https://work.bitou.tech"
-            className="  bg-blue-500 text-center w-[200px] bg-slate-100 px-[32px] py-[14px] rounded-[4px] text-[#fff] hover:bg-blue-800 hover:text-[#fff] transition-all duration-200 ease-in-out"
+            className="  bg-blue-500 text-center w-[200px]  px-[32px] py-[14px] rounded-[4px] text-[#fff] hover:bg-blue-800 hover:text-[#fff] transition-all duration-200 ease-in-out"
           >
             快速开始
           </Link>
           <Link
             href="https://bitou.tech/docs"
-            className="  bg-blue-500 text-center w-[200px] bg-slate-100 px-[32px] py-[14px] rounded-[4px] text-[#fff] hover:bg-blue-800 hover:text-[#fff] transition-all duration-200 ease-in-out"
+            className="  bg-blue-500 text-center w-[200px] px-[32px] py-[14px] rounded-[4px] text-[#fff] hover:bg-blue-800 hover:text-[#fff] transition-all duration-200 ease-in-out"
           >
             了解更多
           </Link>

@@ -14,7 +14,7 @@ const nextConfig = {
     return [
       {
         source: '/docs',
-        destination: '/docs/introduction/what-is-bytebase/',
+        destination: '/docs/introduction/what-is-bitou/',
         permanent: true,
       },
     ];

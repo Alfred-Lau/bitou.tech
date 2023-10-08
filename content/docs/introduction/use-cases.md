@@ -3,7 +3,7 @@ title: Use Cases
 description: This page lists some popular Bytebase use cases.
 ---
 
-Before understanding use cases, it's useful to know [what Bytebase is](/docs/introduction/what-is-bytebase). This page lists some popular Bytebase use cases.
+Before understanding use cases, it's useful to know [what Bytebase is](/docs/introduction/what-is-bitou). This page lists some popular Bytebase use cases.
 
 ## Multi-Database Management
 
