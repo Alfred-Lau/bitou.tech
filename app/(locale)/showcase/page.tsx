@@ -7,7 +7,10 @@ export default function Showcase() {
         <ul className="grid grid-cols-12 gap-[20px]">
           {[1, 2, 3, 4, 5, 6].map((item, index) => {
             return (
-              <li className="col-span-4 border rounded-[4px] h-[300px]">
+              <li
+                className="col-span-4 border rounded-[4px] h-[300px]"
+                key={index}
+              >
                 <div className="flex justify-center items-center h-full">
                   <a href="http://shujufaner.online">shujufaner</a>
                 </div>

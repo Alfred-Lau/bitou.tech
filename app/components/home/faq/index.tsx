@@ -12,7 +12,10 @@ export default function FAQ() {
       <div className="mt-[40px] grid grid-cols-12">
         {[1, 2, 3, 4, 5, 6].map((item, index) => {
           return (
-            <div className="col-span-4 h-[134px] justify-start items-start gap-5 inline-flex">
+            <div
+              className="col-span-4 h-[134px] justify-start items-start gap-5 inline-flex"
+              key={index}
+            >
               <div className="w-7 h-7 relative"></div>
               <div className="grow shrink basis-0 flex-col justify-start items-start gap-3 inline-flex">
                 <div className="self-stretch text-gray-900 text-base font-bold font-['Poppins'] leading-snug">
