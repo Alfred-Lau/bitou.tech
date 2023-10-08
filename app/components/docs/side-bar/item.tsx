@@ -9,7 +9,8 @@ const isActiveItem = (children: any, currentUrl: string): boolean => {
   console.log('props', children, currentUrl);
 
   return children.some(
-    (item) => item.url === currentUrl || isActiveItem(item.children, currentUrl)
+    (item: any) =>
+      item.url === currentUrl || isActiveItem(item.children, currentUrl)
   );
 };
 export type ItemProps = {

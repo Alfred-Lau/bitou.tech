@@ -1,7 +1,7 @@
 import React from 'react';
 import Breadcrumbs from '@/app/components/shared/breadcrumbs';
 
-export default function PostLayout(props) {
+export default function PostLayout(props: any) {
   const {
     title,
     featureImage,
