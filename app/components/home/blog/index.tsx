@@ -1,62 +1,9 @@
-import { fetchBlogs, getLocalBlogList } from '@/app/api/blog';
-import React, { use } from 'react';
-import Image from 'next/image';
+/* eslint-disable @next/next/no-img-element */
+import { getLocalBlogList } from '@/app/api/blog';
+import React from 'react';
 import Link from 'next/link';
 import { formatDateTime } from '@/utils/format';
 import { Avatar } from 'antd';
-
-const defaultBlogs = [
-  {
-    id: 1,
-    title: 'UI Design',
-    category: '',
-    summary:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quas voluptatem sequi impedit.',
-    author: '',
-    avatar: '',
-    updated_at: '',
-  },
-  {
-    id: 1,
-    title: 'UI Design',
-    category: '',
-    summary:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quas voluptatem sequi impedit.',
-    author: '',
-    avatar: '',
-    updated_at: '',
-  },
-  {
-    id: 1,
-    title: 'UI Design',
-    category: '',
-    summary:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quas voluptatem sequi impedit.',
-    author: '',
-    avatar: '',
-    updated_at: '',
-  },
-  {
-    id: 1,
-    title: 'UI Design',
-    category: '',
-    summary:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quas voluptatem sequi impedit.',
-    author: '',
-    avatar: '',
-    updated_at: '',
-  },
-  {
-    id: 1,
-    title: 'UI Design',
-    category: '',
-    summary:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quas voluptatem sequi impedit.',
-    author: '',
-    avatar: '',
-    updated_at: '',
-  },
-];
 
 export default function BlogList() {
   const { blogs } = getLocalBlogList();
@@ -65,7 +12,7 @@ export default function BlogList() {
     <div className="container mt-[40px]">
       <h3 className="section_title text-center">FROM THE BLOG</h3>
       <div className="section_summary m-auto text-center">From our blog</div>
-      <div className="m-auto w-[552px] text-center text-gray-900 text-opacity-60 text-lg font-normal font-['Poppins'] leading-loose">
+      <div className="m-auto w-[552px] text-center text-gray-900 text-opacity-60 text-lg font-normal font-['Poppins'] leading-loose sm:w-full">
         Creativity is a highfalutin word for the work I have to do between now
         and Tuesday.
       </div>

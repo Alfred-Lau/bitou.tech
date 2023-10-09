@@ -1,6 +1,55 @@
 @media (max-width: 768px) {
   .footer {
-    padding: 20px 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+
+    .container {
+      padding: 30px 16px 10px;
+      width: 100%;
+      .ads {
+        padding-top: 20px;
+        padding-bottom: 40px;
+        font-size: 20px;
+        line-height: 24px;
+      }
+
+      .menu {
+        .first {
+          display: flex;
+          justify-content: space-between;
+          &_item {
+            display: inline-block;
+            .first_title {
+              font-size: 16px;
+              font-weight: bold;
+              margin-bottom: 20px;
+            }
+          }
+          .second {
+            &_item {
+              font-size: 10px;
+              margin-bottom: 10px;
+              &:hover {
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+      .beian {
+        text-align: center;
+        font-size: 14px;
+        margin-top: 20px;
+        a {
+          text-decoration: none;
+        }
+      }
+
+      .copyright {
+        text-align: center;
+      }
+    }
   }
 }
 

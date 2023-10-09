@@ -4,7 +4,7 @@ import Image from 'next/image';
 const reasons = [
   {
     id: 1,
-    title: 'UI Design',
+    title: 'Bitou grow your content',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quas voluptatem sequi impedit.',
     image:
@@ -12,7 +12,7 @@ const reasons = [
   },
   {
     id: 2,
-    title: 'UI Design',
+    title: 'Bitou grow your content',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quas voluptatem sequi impedit.',
     image:
@@ -20,7 +20,7 @@ const reasons = [
   },
   {
     id: 3,
-    title: 'UI Design',
+    title: 'Bitou grow your content',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quas voluptatem sequi impedit.',
     image:
@@ -28,7 +28,7 @@ const reasons = [
   },
   {
     id: 4,
-    title: 'UI Design',
+    title: 'Bitou grow your content',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quas voluptatem sequi impedit.',
     image:
@@ -43,10 +43,10 @@ export default function Why() {
       <div className="section_summary">
         Creativity is nothing but the way to solve new problems.
       </div>
-      <ul className="grid grid-cols-12 mt-[20px]">
+      <ul className="grid grid-cols-12 mt-[20px] sm:gap-[12px]">
         {reasons.map((reason) => (
-          <li key={reason.id} className="col-span-3">
-            <div className="w-[264px] h-[322px] px-6 py-14 bg-white rounded-xl shadow flex-col justify-start items-start gap-6 inline-flex">
+          <li key={reason.id} className="col-span-3 sm:col-span-6">
+            <div className="w-[264px] h-[322px] px-6 py-14 bg-white rounded-xl shadow flex-col justify-start items-start gap-6 inline-flex sm:w-full ">
               <div className="self-stretch h-[210px] flex-col justify-start items-start gap-4 flex">
                 <div className="self-stretch h-[94px] flex-col justify-start items-start gap-6 flex">
                   <div className="w-12 h-12 relative">
@@ -58,7 +58,7 @@ export default function Why() {
                     {reason.title}
                   </div>
                 </div>
-                <div className="self-stretch text-gray-900 text-opacity-60 text-sm font-normal font-['Poppins'] leading-[25.20px]">
+                <div className="self-stretch text-gray-900 text-opacity-60 text-sm font-normal font-['Poppins'] leading-[25.20px] sm:line-clamp-4">
                   {reason.description}
                 </div>
               </div>
