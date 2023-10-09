@@ -1,7 +1,7 @@
-import Footer from '@/app/components/Footer';
-import Header from '@/app/components/Header';
+import Footer from '@/app/components/footer';
+import Header from '@/app/components/header';
 import './globals.css';
-import '@/styles/main.scss'
+import '@/styles/main.scss';
 
 export const metadata = {
   title: '笔头--站点全链路管理工具',

@@ -13,12 +13,18 @@ export default function Header() {
             alt="bitou"
             width={48}
             height={48}
+            style={{
+              borderRadius: '39%',
+            }}
           />
-          <h1 className="text-2xl  leading-20  ml-[20px]">BiTou</h1>
+          <h1 className="text-2xl  leading-20  ml-[20px]">Bitou</h1>
         </div>
         <ul className="flex  justify-between ">
           <li className="px-[20px] hover_text">
             <Link href={'/'}> 首页</Link>
+          </li>
+          <li className="px-[20px] hover_text">
+            <Link href={'/product'}>产品</Link>
           </li>
           <li className="px-[20px] hover_text">
             <Link href={'/blog'}> 博客</Link>
