@@ -4,7 +4,7 @@ import Image from 'next/image';
 const reasons = [
   {
     id: 1,
-    title: 'Bitou grow your content',
+    title: '书写创作',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quas voluptatem sequi impedit.',
     image:
@@ -12,7 +12,7 @@ const reasons = [
   },
   {
     id: 2,
-    title: 'Bitou grow your content',
+    title: '个性化定制',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quas voluptatem sequi impedit.',
     image:
@@ -20,7 +20,7 @@ const reasons = [
   },
   {
     id: 3,
-    title: 'Bitou grow your content',
+    title: '聚焦数据',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quas voluptatem sequi impedit.',
     image:
@@ -28,7 +28,7 @@ const reasons = [
   },
   {
     id: 4,
-    title: 'Bitou grow your content',
+    title: '全流程管理',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quas voluptatem sequi impedit.',
     image:
@@ -39,10 +39,8 @@ const reasons = [
 export default function Why() {
   return (
     <div className="container py-[96px] ">
-      <div className="section_title">Why BiTou</div>
-      <div className="section_summary">
-        Creativity is nothing but the way to solve new problems.
-      </div>
+      <div className="section_title">终于等到你</div>
+      <div className="section_summary"></div>
       <ul className="grid grid-cols-12 mt-[20px] sm:gap-[12px]">
         {reasons.map((reason) => (
           <li key={reason.id} className="col-span-3 sm:col-span-6">

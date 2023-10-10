@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { getLocalBlogList } from '@/app/api/blog';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';

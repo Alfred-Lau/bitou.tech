@@ -1,9 +1,9 @@
 ---
-title: 'Bytebase 1.9.0 Deep Dive'
+title: 'Bitou-writer 0.1.0 内测发布'
 author: Bitou
-published_at: 2022/12/6 21:21:21
-feature_image: /content/blog/1-9-0-new-features/1-9-0-new-features-banner.webp
-tags: Explanation
+published_at: 2023/10/04 17:21:21
+feature_image: /images/banner-2.png
+tags: 新功能发布
 description: Last week, we released Bytebase 1.9.0. Let's take a deeper look into the new features - Sync Schema for PostgreSQL, SQL Editor Admin Mode, and External Approval via Feishu.
 ---
 

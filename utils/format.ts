@@ -2,7 +2,7 @@ import dayjs from 'dayjs';
 import * as he from 'he';
 
 export const formatDateTime = (date: Date) => {
-  return dayjs(date).format('MMM DD,YYYY');
+  return dayjs(date).format('YYYY-MM-DD');
 };
 
 export function parseLine(

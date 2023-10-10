@@ -13,8 +13,16 @@ export default function BlogList() {
       <h3 className="section_title text-center">FROM THE BLOG</h3>
       <div className="section_summary m-auto text-center">From our blog</div>
       <div className="m-auto w-[552px] text-center text-gray-900 text-opacity-60 text-lg font-normal font-['Poppins'] leading-loose sm:w-full">
-        Creativity is a highfalutin word for the work I have to do between now
-        and Tuesday.
+        看吧，笔头又长大一点点，你的
+        <a
+          className="text-[#00f]"
+          href="https://pen.bitou.tech"
+          title="不点一下吗"
+        >
+          {' '}
+          内容{' '}
+        </a>
+        是不是也长大了一点点？
       </div>
       <div className="grid grid-cols-12 gap-[20px]">
         {blogs?.map((blog: any, index) => {

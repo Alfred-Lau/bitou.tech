@@ -1,9 +1,9 @@
 ---
-title: 'Bytebase 1.8.0 New Features Dive'
+title: 'Bitou 0.1.0 内测发布'
 author: Bitou
-published_at: 2022/11/22 17:21:21
-feature_image: /content/blog/1-8-0-new-features/1-8-0-new-feature-banner.webp
-tags: Explanation
+published_at: 2023/10/01 17:21:21
+feature_image: /images/banner-2.png
+tags: 新功能发布
 description: Last week, we released Bytebase 1.8.0. Let's take a deeper look into the new features - MySQL Sync Schema, Admin Mode for SQL Editor, and External Approval via Feishu.
 ---
 
