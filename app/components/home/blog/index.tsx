@@ -24,30 +24,30 @@ export default function BlogList() {
         </a>
         是不是也长大了一点点？
       </div>
-      <div className="grid grid-cols-12 gap-[20px]">
+      <div className="grid grid-cols-12 gap-[40px] sm:gap-[10px]">
         {blogs?.map((blog: any, index) => {
           return (
             blog && (
               <Link
                 key={index}
                 href={`/blog/${blog.slug}`}
-                className="col-span-4 aspect-[1] overflow-hidden rounded-[8px] border border-gray-90  hover:border-gray-80 transition-colors duration-200 relative"
+                className="col-span-4 aspect-[1] overflow-hidden rounded-[8px] border border-gray-90  hover:border-gray-80 transition-colors duration-200 relative sm:col-span-12  sm:h-auto"
               >
                 <img
-                  className="h-[260px] min-w-full object-contain"
+                  className="h-[260px] min-w-full object-fill sm:h-[180px]"
                   src={blog.feature_image}
                   alt={blog.title}
                   width={undefined}
                   height={undefined}
                 />
-                <div className=" p-[20px]">
+                <div className="p-[20px] pb-![10px]">
                   <div className="text-left text-violet-500 text-sm font-semibold font-['Poppins'] uppercase leading-normal tracking-wide">
                     {blog.tags}
                   </div>
                   <div className=" text-gray-900 text-xl font-bold font-['Poppins'] leading-7">
                     {blog.title}
                   </div>
-                  <div className="line-clamp-3 text-gray-900 text-opacity-60 text-base font-normal font-['Poppins'] leading-7">
+                  <div className="line-clamp-2 text-gray-900 text-opacity-60 text-base font-normal font-['Poppins'] leading-7">
                     {blog.description}
                   </div>
                   <div className="flex items-center my-[6px]">

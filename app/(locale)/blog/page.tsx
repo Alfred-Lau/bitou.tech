@@ -34,7 +34,7 @@ export default function Blog(props: any) {
   if (blogs.length === 0) return <div>暂无博客</div>;
 
   return (
-    <div className=" grid  grid-cols-12  gap-[20px]  my-[40px]">
+    <div className=" grid  grid-cols-12  gap-[40px]  my-[40px]">
       {blogs.map((blog, index) => {
         return (
           blog && (
