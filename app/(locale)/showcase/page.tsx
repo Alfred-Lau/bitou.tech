@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Showcase() {
   return (
-    <div className="container min-h-[calc(100vh-400px)] mt-[60px]">
+    <div className="container min-h-[calc(100vh-400px)] mt-[60px] ">
       <div className="my-[60px]">
         <ul className="grid grid-cols-12 gap-[20px]">
           {[1, 2, 3, 4, 5, 6].map((item, index) => {
