@@ -2,9 +2,9 @@
 title: 'Bitou-writer 0.1.0 内测发布'
 author: Bitou
 published_at: 2023/10/04 17:21:21
-feature_image: /images/banner-2.png
+feature_image: /images/writer20231011.png
 tags: 新功能发布
-description: Last week, we released Bytebase 1.9.0. Let's take a deeper look into the new features - Sync Schema for PostgreSQL, SQL Editor Admin Mode, and External Approval via Feishu.
+description: Last week, Bitou-writer 0.1.0 内测发布. Let's take a deeper look into the new features - Sync Schema for PostgreSQL, SQL Editor Admin Mode, and External Approval via Feishu.
 ---
 
 [This release](/changelog/bytebase-1-9-0) brings Bytebase back to its regular schedule: once every two weeks. The version is upgraded from 1.8.0 to 1.9.0, the MINOR version upgrade also means that we have evolved Bytebase's schema again. With a total of 205 commits, let's check out what's new. 👇

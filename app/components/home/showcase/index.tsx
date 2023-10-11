@@ -14,7 +14,13 @@ export default function Showcase() {
         </div>
       </div>
       <div className="flex-1">
-        <video width={'100%'} height={300} src="" className="border"></video>
+        <video
+          width={'100%'}
+          height={300}
+          src=""
+          className="border"
+          poster="/images/story.png"
+        ></video>
       </div>
     </div>
   );

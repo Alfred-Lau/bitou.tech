@@ -8,6 +8,7 @@ import bannerImg from '@/public/images/banner-2.png';
 export default function Banner() {
   return (
     <div className={clx(styles.banner, 'sm:!h-[520px] sm:!mb-auto')}>
+      <div className={styles.triangle}></div>
       <div className="h-[400px]  flex  items-center  content-center  flex-col  pt-[88px]">
         <h1 className="w-[744px]  h-[67px]  font-[700]  text-[56px]  leading-[66px]  text-center  mt-[46px] sm:w-full sm:text-[24px] ">
           {/* Dev Less, Content More */}

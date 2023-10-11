@@ -6,7 +6,7 @@ import FAQ from '@/app/components/home/faq';
 
 export default async function Home() {
   return (
-    <main className="min-h-screen  m-auto  mt-[-88px]  sm:w-full">
+    <main className="min-h-screen  m-auto  sm:w-full">
       <Banner />
       <Why></Why>
       <Blog />

@@ -2,9 +2,9 @@
 title: 'Bitou-tracer 0.1.0 内测发布'
 author: Bitou
 published_at: 2023/10/07 17:21:21
-feature_image: /images/banner-2.png
+feature_image: /images/tracer20231011.png
 tags: 新功能发布
-description: Last week, we released Bytebase 1.9.1. Let's take a deeper look into the new features - schema editor, mark issues as Need Attention, data access control, and data masking.
+description: Last week, Bitou-tracer 0.1.0 内测发布. Let's take a deeper look into the new features - schema editor, mark issues as Need Attention, data access control, and data masking.
 ---
 
 The penultimate release of 2022 brings Bytebase from 1.9.0 to [1.9.1](/changelog/bytebase-1-9-1). Although it’s only a PATCH version, the 237 commits still bring us tons of new features. Let’s take a closer look at what's released during this World Cup cycle ⚽️.
