@@ -3,7 +3,7 @@ import Image from 'next/image';
 import cls from 'classnames';
 import styles from './index.module.scss';
 
-export default function Header() {
+export default async function Header() {
   return (
     <header className={cls([styles.header])}>
       <div className="px-[20px] m-auto  grid grid-cols-3  justify-center  items-center  h-[68px] text-[#3B3C4A] ">
@@ -37,22 +37,30 @@ export default function Header() {
           <li className="px-[20px] hover_text">
             <Link href={'/docs'}> 文档</Link>
           </li>
-          <li className="px-[20px] hover_text">
-            <a href={'https://github.com/Alfred-Lau'}> Github </a>
-          </li>
         </ul>
         <div className="flex gap-[10px] justify-end sm:hidden">
           <a
-            href={'https://work.bitou.tech/login?redirect=%2Fhome'}
+            href={
+              'https://work.bitou.tech/login?redirect=${window.location.href}'
+            }
             className="px-[20px] hover_text"
           >
-            登录
-          </a>
-          <a
-            href={'https://work.bitou.tech/register'}
-            className="px-[20px] hover_text"
-          >
-            注册
+            <a href={'https://github.com/Alfred-Lau'}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 26 26"
+                width="22"
+                height="22"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M13 .324c-7.15 0-13 5.85-13 13 0 5.769 3.737 10.644 8.856 12.35.65.082.894-.244.894-.65V22.83c-3.656.813-4.388-1.706-4.388-1.706-.568-1.462-1.462-1.868-1.462-1.868-1.219-.813.081-.813.081-.813 1.3.081 2.032 1.3 2.032 1.3 1.137 1.95 3.006 1.381 3.818 1.056a2.805 2.805 0 0 1 .813-1.706c-2.925-.325-5.931-1.462-5.931-6.419 0-1.381.487-2.6 1.3-3.494-.163-.325-.57-1.625.162-3.412 0 0 1.056-.325 3.575 1.3 1.056-.325 2.113-.406 3.25-.406s2.194.162 3.25.406c2.519-1.706 3.575-1.381 3.575-1.381.731 1.787.244 3.087.163 3.412.812.894 1.3 2.031 1.3 3.494 0 4.956-3.007 6.094-5.932 6.419.488.406.894 1.218.894 2.437v3.575c0 .325.244.732.894.65C22.263 23.968 26 19.093 26 13.324c0-7.15-5.85-13-13-13Z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </a>
           </a>
         </div>
         <div className="hidden sm:block sm:absolute sm:top-[16px] sm:right-[16px]">
