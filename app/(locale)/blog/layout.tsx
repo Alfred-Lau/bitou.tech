@@ -14,7 +14,7 @@ export default function RootLayout({
     <div className="container">
       <div className=" flex  justify-between">
         <div className=" h-[400px]  flex  items-start  flex-col  justify-center  w-[560px]">
-          <h3 className="  text-[40px]">Hit News</h3>
+          <h3 className="  text-[40px]">最新发布</h3>
           <p className=" mt-[20px]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quaerat
             iste explicabo inventore recusandae saepe repudiandae iusto, natus
@@ -24,7 +24,7 @@ export default function RootLayout({
         </div>
         <div>
           <Image
-            src="/content/blog/1-12-1-new-features/gh-bb.webp"
+            src="https://bitou-tech.oss-cn-hangzhou.aliyuncs.com/uploads/20230518094635_59921cb4.png"
             width={720}
             height={360}
             alt=""

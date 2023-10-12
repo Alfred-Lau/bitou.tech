@@ -1,5 +1,5 @@
 ---
-title: 笔头是谁
+title: 笔头二三事
 description: Bitou is a database schema change and version control management tool for teams. It consists of a web console and a backend. The backend has a migration core to manage database schema changes. It also integrates with VCS to enable version controlled schema management.
 ---
 

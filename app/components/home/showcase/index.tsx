@@ -13,13 +13,15 @@ export default function Showcase() {
           <Link href="showcase">更多</Link>
         </div>
       </div>
-      <div className="flex-1">
+      <div className="flex-1 rounded-2xl shadow">
         <video
-          width={'100%'}
-          height={300}
-          src=""
-          className="border"
-          poster="/images/story.png"
+          src="https://gw.alipayobjects.com/v/huamei_gcee1x/afts/video/jXRBRK_VAwoAAAAAAAAAAAAAK4eUAQBr"
+          autoPlay
+          // 没有下面的一句是不会播放的
+          crossOrigin="anonymous"
+          loop
+          muted
+          className="flex-1 rounded-2xl shadow"
         ></video>
       </div>
     </div>
