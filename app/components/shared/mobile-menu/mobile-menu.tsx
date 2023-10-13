@@ -33,7 +33,6 @@ import SchemaIcon from '@/svgs/schema-menu-docs.inline.svg';
 import Burger from './burger';
 
 const icons: {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   [key: string]: any;
 } = {
   about: AboutIcon,
@@ -211,7 +210,6 @@ const MobileMenu = ({ hasBanner }: { hasBanner: boolean }) => {
                                   >
                                     <Link
                                       className="group block pt-4"
-                                      theme="gray"
                                       href={linkUrl}
                                       prefetch={
                                         isDropdownOpened && items
