@@ -15,7 +15,7 @@ export default function Banner() {
           笔头，你的首席内容官
         </h1>
         <div className="w-[650px] text-center text-gray-900 text-opacity-70 text-xl font-normal font-['Poppins'] leading-9 mt-[20px] sm:w-full sm:text-[18px] ">
-          快速构建个人品牌，你的分享值得被看见。
+          你的分享值得被时光看见
         </div>
         <div className="flex justify-center items-center h-full gap-[20px] ">
           <Link
