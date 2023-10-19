@@ -12,7 +12,7 @@ export default function Showcase() {
                 key={index}
               >
                 <div className="flex justify-center items-center h-full">
-                  <a href="http://shujufaner.online">shujufaner</a>
+                  <a href="https://datafun.bitou.tech">data fun</a>
                 </div>
               </li>
             );

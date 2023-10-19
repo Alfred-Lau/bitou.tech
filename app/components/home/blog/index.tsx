@@ -16,7 +16,7 @@ export default function BlogList() {
         看吧，笔头又长大一点点，你的
         <a
           className="text-[#00f]"
-          href="https://pen.bitou.tech"
+          href="https://work.bitou.tech"
           title="不点一下吗"
         >
           {' '}

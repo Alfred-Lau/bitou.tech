@@ -15,19 +15,19 @@ export default function FAQ() {
         {[
           {
             id: 1,
-            title: '随便写点什么',
+            title: '产生一个有趣的想法',
             summary: '记下你想分享的内容',
-            link: 'https://pen.bitou.tech/',
+            link: 'https://work.bitou.tech/',
           },
           {
             id: 2,
-            title: '对世界笑一笑',
+            title: '笔头帮你换装',
             summary: '选择或者完全自定义你的内容模板',
             link: 'https://work.bitou.tech/',
           },
           {
             id: 3,
-            title: '迭代，发布，看着它长大',
+            title: '迭代，发布，看着它和世界对话',
             summary: '对，就是这样，世界也会回你以歌',
             link: 'https://render.bitou.tech/',
           },

@@ -4,8 +4,9 @@ import './globals.css';
 import '@/styles/main.scss';
 
 export const metadata = {
-  title: '笔头 - 你的首席内容官',
-  description: '你的分享值得被时光看见。关注全链路流量和内容的整个生命周期',
+  title: '笔头 - 你的首席内容官 - 专注个人品牌的运营工具，效率提升打造',
+  description:
+    '你的分享值得被时光看见。关注全链路流量和内容的整个生命周期，笔头，专注个人品牌的运营工具，效率提升打造',
 };
 
 export default function RootLayout({
@@ -15,7 +16,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <meta property="og:title" content="笔头 - 你的首席内容官" />
+      <meta
+        property="og:title"
+        content="笔头 - 你的首席内容官 - 专注个人品牌的运营工具，效率提升打造"
+      />
       <meta property="og:url" content="https://bitou.tech/" />
       <meta
         property="og:image"
@@ -23,7 +27,7 @@ export default function RootLayout({
       />
       <meta
         property="og:description"
-        content="你的分享值得被时光看见。关注全链路流量和内容的整个生命周期"
+        content="你的分享值得被时光看见。关注全链路流量和内容的整个生命周期，笔头，专注个人品牌的运营工具，效率提升打造"
       />
       <link rel="icon" href="/favicon.png" sizes="any" />
       <body>
