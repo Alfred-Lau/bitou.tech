@@ -1,4 +1,4 @@
-FROM node:18-alpine AS base
+FROM node:21-alpine AS base
 
 # Install dependencies only when needed
 FROM base AS deps
@@ -7,13 +7,10 @@ RUN apk add --no-cache libc6-compat
 WORKDIR /app
 
 # Install dependencies based on the preferred package manager
-COPY package.json yarn.lock* package-lock.json* pnpm-lock.yaml* ./
-RUN \
-  if [ -f yarn.lock ]; then yarn --frozen-lockfile; \
-  elif [ -f package-lock.json ]; then npm ci; \
-  elif [ -f pnpm-lock.yaml ]; then yarn global add pnpm && pnpm i --frozen-lockfile; \
-  else echo "Lockfile not found." && exit 1; \
-  fi
+# 必须优先拷贝 package.json，否则会导致每次修改代码都会重新安装依赖
+COPY package.json pnpm-lock.yaml* ./
+RUN npm install -g pnpm 
+RUN pnpm install
 
 
 # Rebuild the source code only when needed
@@ -27,7 +24,8 @@ COPY . .
 # Uncomment the following line in case you want to disable telemetry during the build.
 # ENV NEXT_TELEMETRY_DISABLED 1
 
-RUN yarn build
+RUN npm install -g pnpm 
+RUN pnpm run build
 
 # If using npm comment out above and use below instead
 # RUN npm run build
