@@ -2,6 +2,7 @@ import { Divider } from 'antd';
 import Link from 'next/link';
 import styles from './index.module.scss';
 
+// 页脚
 export default function Footer() {
   return (
     <footer className="flex flex-col justify-between items-center h-[500px]  bg-[#121127]  text-white sm:h-full">
