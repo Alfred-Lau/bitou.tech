@@ -4,6 +4,7 @@ import cls from 'classnames';
 import styles from './index.module.scss';
 import MobileMenu from '../shared/mobile-menu';
 
+// 页头
 export default async function Header() {
   return (
     <header className={cls([styles.header])}>
