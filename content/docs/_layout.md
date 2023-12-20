@@ -11,7 +11,7 @@ expand_section_list: ['介绍', '三步上手']
 
 ### [用户故事](/introduction/use-cases)
 
-### [更新日志](/faq)
+### [更新日志](/updates)
 
 ## 三步上手
 

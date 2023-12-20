@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output :process.env.NODE_ENV === 'production' ? 'standalone' :undefined,
+  output: process.env.NODE_ENV === 'production' ? 'standalone' : undefined,
   images: {
     remotePatterns: [
       {
@@ -15,7 +15,7 @@ const nextConfig = {
     return [
       {
         source: '/docs',
-        destination: '/docs/introduction/what-is-bitou/',
+        destination: '/docs/updates',
         permanent: true,
       },
     ];

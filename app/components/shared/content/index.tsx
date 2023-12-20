@@ -76,6 +76,7 @@ const components = {
 };
 
 export default function Content(props) {
+  console.log('🚀 ~ file: index.tsx:79 ~ Content ~ props:', props);
   return (
     <div>
       <MDXRemote
