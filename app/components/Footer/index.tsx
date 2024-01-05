@@ -1,11 +1,11 @@
-import { Divider } from 'antd';
-import Link from 'next/link';
-import styles from './index.module.scss';
+import { Divider } from "antd";
+import Link from "next/link";
+import styles from "./index.module.scss";
 
 // 页脚
 export default function Footer() {
   return (
-    <footer className="flex flex-col justify-between items-center h-[500px]  bg-[#121127]  text-white sm:h-full">
+    <footer className="flex flex-col justify-between items-center h-auto  bg-[#121127]  text-white sm:h-full">
       <div className={styles.footer}>
         <div className={styles.container}>
           <div className={styles.ads}>笔头，全流程的站点管理</div>
@@ -13,30 +13,32 @@ export default function Footer() {
             <ul className={styles.first}>
               {[
                 {
-                  title: '系统状态',
+                  title: "系统状态",
                   children: [
-                    { title: 'bitou', version: '0.1.0' },
-                    { title: 'bitou-writer', version: '0.1.0' },
-                    { title: 'bitou-cli', version: '0.1.0' },
-                    { title: 'bitou-tracer', version: '0.1.0' },
+                    { title: "bitou", version: "0.1.0" },
+                    { title: "bitou-writer", version: "0.1.0" },
+                    { title: "bitou-cli", version: "0.1.0" },
+                    { title: "bitou-tracer", version: "0.1.0" },
                   ],
                 },
                 {
-                  title: '更多产品',
+                  title: "更多产品",
                   children: [
-                    { title: '数据实验工具', link: '/docs/data_experiment' },
-                    { title: 'AI 命令行', link: '/docs/ai_cli' },
-                    { title: '组件库', link: '/docs/component' },
-                    { title: '扩展', link: '/docs/extension' },
-                    { title: '其他' },
+                    { title: "数据实验工具", link: "/docs/data_experiment" },
+                    { title: "AI 命令行", link: "/docs/bitou_cli" },
+                    { title: "营销组件库", link: "https://render.bitou.tech" },
+                    { title: "文档站点生成器", link: "https://pen.bitou.tech" },
+                    { title: "浏览器扩展", link: "/docs/extension" },
+                    { title: "vscode扩展", link: "/docs/vsc" },
+                    { title: "其他" },
                   ],
                 },
                 {
-                  title: '更多',
+                  title: "更多",
                   children: [
-                    { title: '文档' },
-                    { title: '反馈' },
-                    { title: '社区' },
+                    { title: "文档", link: "https://docs.bitou.tech" },
+                    { title: "反馈" },
+                    { title: "社区" },
                   ],
                 },
               ].map((item, index) => {
@@ -48,12 +50,12 @@ export default function Footer() {
                         return (
                           <li key={index} className={styles.second_item}>
                             <Link href={`${item.link}`}>
-                              {item.title}{' '}
+                              {item.title}{" "}
                               {item.version && (
                                 <>
                                   <Divider
                                     type="vertical"
-                                    style={{ backgroundColor: '#fff' }}
+                                    style={{ backgroundColor: "#fff" }}
                                   />
                                   {item.version}
                                 </>

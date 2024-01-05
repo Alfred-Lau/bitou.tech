@@ -1,24 +1,33 @@
-import React from 'react';
-import { MDXRemote } from 'next-mdx-remote/rsc';
-import remarkGfm from 'remark-gfm';
-import Image from 'next/image';
+import React from "react";
+import { MDXRemote } from "next-mdx-remote/rsc";
+import remarkGfm from "remark-gfm";
+import Image from "next/image";
+import CodeBlock from "@/app/components/shared/code-block";
 
 const getId = (children: any) => {
-  if (typeof children === 'string') {
+  if (typeof children === "string") {
     return children
-      .split(' ')
-      .join('-')
-      .replace(/[^\w\s]/gi, '')
+      .split(" ")
+      .join("-")
+      .replace(/[^\w\s]/gi, "")
       .toLowerCase();
   }
-  return '';
+  return "";
 };
 
 const components = {
+  h1: ({ children, ...rest }: any) => {
+    const id = getId(children);
+    return (
+      <h1 id={id} {...rest} className="  ">
+        {children}
+      </h1>
+    );
+  },
   h2: ({ children, ...rest }: any) => {
     const id = getId(children);
     return (
-      <h2 id={id} {...rest}>
+      <h2 id={id} {...rest} className="">
         {children}
       </h2>
     );
@@ -37,12 +46,12 @@ const components = {
     </figure>
   ),
   pre: (props: any) => <>{props.children}</>,
-  // code: (props: any) => {
-  //   if (props?.className?.startsWith('language-')) {
-  //     return <CodeBlock {...props} />;
-  //   }
-  //   return <code {...props} />;
-  // },
+  code: (props: any) => {
+    if (props?.className?.startsWith("language-")) {
+      return <CodeBlock {...props} />;
+    }
+    return <code {...props} />;
+  },
   img: (props: any) => {
     const { src, alt } = props;
     return (
@@ -76,7 +85,7 @@ const components = {
 };
 
 export default function Content(props) {
-  console.log('🚀 ~ file: index.tsx:79 ~ Content ~ props:', props);
+  console.log("🚀 ~ file: index.tsx:79 ~ Content ~ props:", props);
   return (
     <div>
       <MDXRemote

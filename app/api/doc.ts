@@ -1,6 +1,6 @@
-import matter from 'gray-matter';
-import fs from 'fs-extra';
-import { parseLine } from '@/utils/format';
+import matter from "gray-matter";
+import fs from "fs-extra";
+import { parseLine } from "@/utils/format";
 
 const getNestedSidebar = (data: API.SidebarItem[]): API.SidebarItem[] => {
   for (let i = 0; i < data.length; i++) {
@@ -25,11 +25,11 @@ export const getSidebar = (): {
 } => {
   const md = fs.readFileSync(
     `${process.cwd()}/content/docs/_layout.md`,
-    'utf-8'
+    "utf-8",
   );
   const { data, content } = matter(md);
   const sidebar: API.SidebarItem[] = [];
-  const lines = content.trim().split('\n');
+  const lines = content.trim().split("\n");
 
   let currentSection: API.SidebarItem | null = null;
 
@@ -57,9 +57,10 @@ export const getSidebar = (): {
 export const getDocDetail = (slug: string): API.DocDetail => {
   const md = fs.readFileSync(
     `${process.cwd()}/content/docs/${slug}.md`,
-    'utf-8'
+    "utf-8",
   );
   const { data, content } = matter(md);
+  console.log("🚀 ~ file: doc.ts:63 ~ getDocDetail ~ content:", content, data);
   return {
     ...data,
     content,

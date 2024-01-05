@@ -18,3 +18,14 @@ description: 我来支持更丰富的渲染形式.
 - [react-lite] 完成状态更新机制 和 mount 阶段的 beginWork & completeWork
 
 ### 修复
+
+```json
+[
+  {
+    "status": "SUCCESS",
+    "code": 0,
+    "title": "OK",
+    "content": ""
+  }
+]
+```
