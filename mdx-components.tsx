@@ -6,10 +6,10 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     h2: ({ children }) => <h2 style={{ fontSize: "100px" }}>{children}</h2>,
     img: (props) => (
       <Image
-        alt="image"
+        alt="alt"
         sizes="100vw"
         style={{ width: "100%", height: "auto" }}
-        {...(props as ImageProps)}
+        {...(props as Omit<ImageProps, "alt">)}
       />
     ),
     ...components,
