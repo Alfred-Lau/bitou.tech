@@ -15,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" data-theme='light'>
       <meta
         property="og:title"
         content="笔头 - 你的首席内容官 - 专注个人品牌的运营工具，效率提升打造"
