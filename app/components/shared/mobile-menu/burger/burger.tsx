@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import clsx from 'classnames';
-import { LazyMotion, domAnimation, m } from 'framer-motion';
+import clsx from "classnames";
+import { LazyMotion, domAnimation, m } from "framer-motion";
 
 const ANIMATION_DURATION = 0.2;
 
@@ -17,12 +17,12 @@ const Burger = ({
   <LazyMotion features={domAnimation}>
     <m.button
       className={clsx(
-        'absolute top-0 right-0 z-50 px-[22px] py-[26px] sm:py-[22px] sm:pr-4',
+        "absolute top-0 right-0 z-50 px-[22px] py-[26px] sm:py-[22px] sm:pr-4",
         className
       )}
       type="button"
-      animate={isToggled ? 'toggled' : 'initial'}
-      aria-label={isToggled ? 'Close menu' : 'Open menu'}
+      animate={isToggled ? "toggled" : "initial"}
+      aria-label={isToggled ? "Close menu" : "Open menu"}
       onClick={onClick}
     >
       <span className="relative block h-7 w-7">
@@ -31,7 +31,7 @@ const Burger = ({
           variants={{
             initial: {
               top: 4,
-              display: 'block',
+              display: "block",
               transition: {
                 duration: ANIMATION_DURATION,
                 delay: ANIMATION_DURATION,
@@ -40,7 +40,7 @@ const Burger = ({
             toggled: {
               top: 9,
               transition: { duration: ANIMATION_DURATION },
-              transitionEnd: { display: 'none' },
+              transitionEnd: { display: "none" },
             },
           }}
         />
@@ -48,11 +48,11 @@ const Burger = ({
           className="absolute top-[13px] right-0 block h-0.5 w-7 rounded-full bg-black transition-colors duration-200"
           variants={{
             initial: {
-              display: 'block',
+              display: "block",
               transition: { delay: ANIMATION_DURATION },
             },
             toggled: {
-              display: 'none',
+              display: "none",
               transition: { delay: ANIMATION_DURATION },
             },
           }}
@@ -62,7 +62,7 @@ const Burger = ({
           variants={{
             initial: {
               bottom: 4,
-              display: 'block',
+              display: "block",
               transition: {
                 duration: ANIMATION_DURATION,
                 delay: ANIMATION_DURATION,
@@ -71,7 +71,7 @@ const Burger = ({
             toggled: {
               bottom: 9,
               transition: { duration: ANIMATION_DURATION },
-              transitionEnd: { display: 'none' },
+              transitionEnd: { display: "none" },
             },
           }}
         />
@@ -79,13 +79,13 @@ const Burger = ({
           className="absolute top-3.5 right-0 hidden h-0.5 w-7 rounded-full bg-black transition-colors duration-200"
           variants={{
             initial: {
-              rotate: '0deg',
+              rotate: "0deg",
               transition: { duration: ANIMATION_DURATION },
-              transitionEnd: { display: 'none' },
+              transitionEnd: { display: "none" },
             },
             toggled: {
-              display: 'block',
-              rotate: '45deg',
+              display: "block",
+              rotate: "45deg",
               transition: {
                 duration: ANIMATION_DURATION,
                 delay: ANIMATION_DURATION,
@@ -97,13 +97,13 @@ const Burger = ({
           className="absolute top-3.5 right-0 hidden h-0.5 w-7 rounded-full bg-black transition-colors duration-200"
           variants={{
             initial: {
-              rotate: '0deg',
+              rotate: "0deg",
               transition: { duration: ANIMATION_DURATION },
-              transitionEnd: { display: 'none' },
+              transitionEnd: { display: "none" },
             },
             toggled: {
-              display: 'block',
-              rotate: '-45deg',
+              display: "block",
+              rotate: "-45deg",
               transition: {
                 duration: ANIMATION_DURATION,
                 delay: ANIMATION_DURATION,

@@ -1,36 +1,34 @@
-'use client';
+"use client";
 
-import { usePathname } from 'next/navigation';
-
-import { useEffect, useState } from 'react';
-
-import clsx from 'classnames';
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
+import clsx from "classnames";
 import {
   AnimatePresence,
   LazyMotion,
   domAnimation,
   m,
   useAnimation,
-} from 'framer-motion';
+} from "framer-motion";
 
 // import AlgoliaSearch from '@/components/pages/docs/algolia-search';
-import Link from 'next/link';
+import Link from "next/link";
 
-import { MENU } from '@/lib/menus';
-import Route from '@/lib/route';
+import { MENU } from "@/lib/menus";
+import Route from "@/lib/route";
 
-import AboutIcon from '@/svgs/about.inline.svg';
-import BlogIcon from '@/svgs/blog.inline.svg';
-import CaseStudyIcon from '@/svgs/case-study.inline.svg';
-import ChangelogIcon from '@/svgs/changelog.inline.svg';
-import ConceptIcon from '@/svgs/concept.inline.svg';
-import EditorIcon from '@/svgs/editor-menu-docs.inline.svg';
-import IntroIcon from '@/svgs/intro.inline.svg';
-import UseCaseIcon from '@/svgs/usecase.inline.svg';
-import DbIcon from '@/svgs/db.inline.svg';
-import RocketIcon from '@/svgs/rocket.inline.svg';
-import SchemaIcon from '@/svgs/schema-menu-docs.inline.svg';
-import Burger from './burger';
+import AboutIcon from "@/svgs/about.inline.svg";
+import BlogIcon from "@/svgs/blog.inline.svg";
+import CaseStudyIcon from "@/svgs/case-study.inline.svg";
+import ChangelogIcon from "@/svgs/changelog.inline.svg";
+import ConceptIcon from "@/svgs/concept.inline.svg";
+import EditorIcon from "@/svgs/editor-menu-docs.inline.svg";
+import IntroIcon from "@/svgs/intro.inline.svg";
+import UseCaseIcon from "@/svgs/usecase.inline.svg";
+import DbIcon from "@/svgs/db.inline.svg";
+import RocketIcon from "@/svgs/rocket.inline.svg";
+import SchemaIcon from "@/svgs/schema-menu-docs.inline.svg";
+import Burger from "./burger";
 
 const icons: {
   [key: string]: any;
@@ -58,12 +56,12 @@ const menuVariants = {
       duration: ANIMATION_DURATION,
     },
     transitionEnd: {
-      display: 'none',
+      display: "none",
     },
   },
   opened: {
     opacity: 1,
-    display: 'block',
+    display: "block",
     transition: {
       duration: ANIMATION_DURATION,
     },
@@ -80,7 +78,7 @@ const dropdownVariants = {
     },
   },
   visible: {
-    height: 'auto',
+    height: "auto",
     opacity: 1,
     transition: {
       duration: ANIMATION_DURATION,
@@ -97,13 +95,13 @@ const MobileMenu = ({ hasBanner }: { hasBanner: boolean }) => {
 
   useEffect(() => {
     if (isOpen) {
-      controls.start('opened');
-      document.body.style.overflow = 'hidden';
-      document.body.style.touchAction = 'none';
+      controls.start("opened");
+      document.body.style.overflow = "hidden";
+      document.body.style.touchAction = "none";
     } else {
-      controls.start('closed');
-      document.body.style.overflow = '';
-      document.body.style.touchAction = '';
+      controls.start("closed");
+      document.body.style.overflow = "";
+      document.body.style.touchAction = "";
     }
   }, [isOpen, controls]);
 
@@ -131,19 +129,19 @@ const MobileMenu = ({ hasBanner }: { hasBanner: boolean }) => {
         >
           <div
             className={clsx(
-              'ml-auto flex w-1/2 flex-col justify-between  px-7 pb-8 pt-[84px] md:px-5 sm:w-full sm:px-4 xs:pb-5',
+              "ml-auto flex  flex-col justify-between  px-0 pb-8 pt-[62px] ",
               hasBanner
-                ? 'h-[calc(100vh-56px)] sm:h-[calc(100vh-46px)]'
-                : 'h-full'
+                ? "h-[calc(100vh-56px)] sm:h-[calc(100vh-46px)]"
+                : "h-full"
             )}
             onClick={(evt) => evt.stopPropagation()}
           >
-            <ul className="flex max-h-[70%] flex-col items-stretch divide-y ">
-              {MENU.mobile.map(({ title, href = '', items }, idx) => {
+            <ul className="flex flex-col items-stretch divide-y pt-6 bg-white">
+              {MENU.mobile.map(({ title, href = "", items }, idx) => {
                 const isDropdownOpened = openedDropdown === idx;
                 return (
                   <li
-                    className="relative first:-mt-4 last:border-b last:border-gray-90"
+                    className="relative first:-mt-4 last:border-b last:border-gray-90 px-10"
                     key={idx}
                   >
                     {items ? (
@@ -162,18 +160,18 @@ const MobileMenu = ({ hasBanner }: { hasBanner: boolean }) => {
                             <span className="relative">
                               <span
                                 className={clsx(
-                                  'absolute -left-[17px] top-1/2 h-2 w-[1.5px] -translate-y-1/2 bg-current transition-transform duration-200',
+                                  "absolute -left-[17px] top-1/2 h-2 w-[1.5px] -translate-y-1/2 bg-current transition-transform duration-200",
                                   isDropdownOpened
-                                    ? 'rotate-45'
-                                    : 'rotate-[135deg]'
+                                    ? "rotate-45"
+                                    : "rotate-[135deg]"
                                 )}
                               />
                               <span
                                 className={clsx(
-                                  'absolute -left-3 top-1/2 h-2 w-[1.5px] -translate-y-1/2 bg-current transition-transform duration-200',
+                                  "absolute -left-3 top-1/2 h-2 w-[1.5px] -translate-y-1/2 bg-current transition-transform duration-200",
                                   isDropdownOpened
-                                    ? '-rotate-45'
-                                    : '-rotate-[135deg]'
+                                    ? "-rotate-45"
+                                    : "-rotate-[135deg]"
                                 )}
                               />
                             </span>
@@ -246,7 +244,7 @@ const MobileMenu = ({ hasBanner }: { hasBanner: boolean }) => {
                   </li>
                 );
               })}
-              <li className="relative hidden first:-mt-4 last:border-b last:border-gray-90 sm:block">
+              <li className="relative hidden first:-mt-4 last:border-b last:border-gray-90 ">
                 <Link
                   className="flex w-full flex-col items-start justify-center whitespace-nowrap py-5 text-20 font-medium leading-none tracking-tight transition-colors duration-200 hover:cursor-pointer"
                   href={Route.GITHUB}
