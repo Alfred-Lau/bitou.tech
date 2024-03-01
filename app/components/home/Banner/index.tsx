@@ -1,13 +1,13 @@
-import React from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
-import clx from 'classnames';
-import styles from './index.module.scss';
-import bannerImg from '@/public/images/banner-2.png';
+import React from "react";
+import Link from "next/link";
+import Image from "next/image";
+import clx from "classnames";
+import styles from "./index.module.scss";
+import bannerImg from "@/public/images/banner-2.png";
 
 export default function Banner() {
   return (
-    <div className={clx(styles.banner, 'sm:!h-[520px] sm:!mb-auto')}>
+    <div className={clx(styles.banner, "sm:!h-[520px] sm:!mb-auto")}>
       <div className={styles.triangle}></div>
       <div className="h-[400px]  flex  items-center  content-center  flex-col  pt-[88px]">
         <h1 className="w-[744px]  h-[67px]  font-[700]  text-[56px]  leading-[66px]  text-center  mt-[46px] sm:w-full sm:text-[24px] ">
@@ -38,8 +38,8 @@ export default function Banner() {
           width={936}
           height={585}
           className="w-[936px] h-[585px] rounded-[20px] shadow sm:w-full sm:h-auto"
-          // src="http://bitou-tech.oss-cn-hangzhou.aliyuncs.com/uploads/file_1695173578914.png"
-          src={bannerImg}
+          src="https://bitou-tech.oss-cn-hangzhou.aliyuncs.com/online/iShot_2024-02-20_23.39.24.png"
+          // src={bannerImg}
           alt="bitou"
         ></Image>
       </div>
