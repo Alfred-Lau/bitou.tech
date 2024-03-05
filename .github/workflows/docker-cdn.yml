@@ -28,7 +28,7 @@ jobs:
       # 对应第3步，执行打包命令
       - name: "Build"
         run: |
-          cnpm install
+          npm install
           npm run build
 
       # 对应第4、5步，配置参数登陆服务器+拷贝到指定目录
@@ -51,5 +51,5 @@ jobs:
           key: ${{ secrets.PRIVATE_KEY }}
           script: |
             cd /root/codezone/bitou-nextjs
-            cnpm install
+            npm install
             pm2 restart bitou-website
