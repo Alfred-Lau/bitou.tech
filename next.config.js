@@ -20,7 +20,7 @@ const nextConfig = {
       },
     ];
   },
-  assetPrefix: process.env.NODE_ENV === 'production' ? 'https://render.bitou.tech/mainsite/' : '',
+  // assetPrefix: process.env.NODE_ENV === 'production' ? 'https://render.bitou.tech/mainsite/' : '',
 };
 
 module.exports = nextConfig;
