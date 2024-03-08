@@ -1,5 +1,7 @@
 import Footer from '@/app/components/Footer';
 import Header from '@/app/components/Header';
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 import './globals.css';
 import '@/styles/main.scss';
 
@@ -34,6 +36,8 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
