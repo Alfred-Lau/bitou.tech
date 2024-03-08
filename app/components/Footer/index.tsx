@@ -34,7 +34,7 @@ export default function Footer() {
                 {
                   title: '更多',
                   children: [
-                    { title: '文档'，link: 'https://pen.bitou.tech/' },
+                    { title: '文档', link: 'https://pen.bitou.tech/' },
                     { title: '反馈' },
                     { title: '社区' },
                   ],
