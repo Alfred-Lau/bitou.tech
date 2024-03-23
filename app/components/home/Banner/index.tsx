@@ -1,9 +1,10 @@
+"use client";
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import clx from "classnames";
 import styles from "./index.module.scss";
-import bannerImg from "@/public/images/banner-2.png";
+import Typewriter from "typewriter-effect";
 
 export default function Banner() {
   return (
@@ -12,7 +13,28 @@ export default function Banner() {
       <div className="h-[400px]  flex  items-center  content-center  flex-col  pt-[88px]">
         <h1 className="w-[744px]  h-[67px]  font-[700]  text-[56px]  leading-[66px]  text-center  mt-[46px] sm:w-full sm:text-[24px] ">
           {/* Dev Less, Content More */}
-          笔头，你的首席内容官
+          <div>
+            <span>
+              <Typewriter
+                options={{
+                  autoStart: true,
+                  loop: true,
+                }}
+                onInit={(typewriter) => {
+                  typewriter
+                    .typeString("笔头, 你的首席内容官")
+                    .callFunction(() => {
+                      console.log("String typed out!");
+                    })
+                    .deleteChars(9)
+                    .callFunction(() => {
+                      console.log("All strings were deleted");
+                    })
+                    .start();
+                }}
+              />
+            </span>
+          </div>
         </h1>
         <div className="w-[650px] text-center text-gray-900 text-opacity-70 text-xl font-normal font-['Poppins'] leading-9 mt-[20px] sm:w-full sm:text-[18px] ">
           你的分享值得被时光看见
