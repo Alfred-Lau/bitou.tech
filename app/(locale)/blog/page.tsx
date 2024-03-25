@@ -43,13 +43,16 @@ export default function Blog(props: any) {
             你的分享值得被时光看见。关注全链路流量和内容的整个生命周期，笔头，专注个人品牌的运营工具，效率提升打造
           </p>
         </div>
-        <div>
-          <Image
-            src="https://bitou-tech.oss-cn-hangzhou.aliyuncs.com/uploads/20230518094635_59921cb4.png"
-            width={720}
-            height={360}
-            alt=""
-          ></Image>
+        <div className="w-[60%] p-10">
+          <video
+            src="https://gw.alipayobjects.com/v/huamei_gcee1x/afts/video/jXRBRK_VAwoAAAAAAAAAAAAAK4eUAQBr"
+            autoPlay
+            // 没有下面的一句是不会播放的
+            crossOrigin="anonymous"
+            loop
+            muted
+            className="flex-1 rounded-2xl shadow"
+          ></video>
         </div>
       </div>
       <div className="grid  grid-cols-12  gap-[40px]  my-[40px]">
