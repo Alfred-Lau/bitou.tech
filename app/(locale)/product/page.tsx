@@ -1,7 +1,6 @@
 "use client";
 
 import { getUserInfoURL } from "@/app/api/user";
-import { link } from "fs";
 import React from "react";
 
 export default function Product() {

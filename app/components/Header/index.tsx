@@ -1,8 +1,8 @@
-import Link from 'next/link';
-import Image from 'next/image';
-import cls from 'classnames';
-import styles from './index.module.scss';
-import MobileMenu from '../shared/mobile-menu';
+import Link from "next/link";
+import Image from "next/image";
+import cls from "classnames";
+import styles from "./index.module.scss";
+import MobileMenu from "../shared/mobile-menu";
 
 // 页头
 export default async function Header() {
@@ -16,7 +16,7 @@ export default async function Header() {
             width={48}
             height={48}
             style={{
-              borderRadius: '39%',
+              borderRadius: "39%",
             }}
           />
           <h1 className="text-2xl  leading-20  ml-[20px] sm:text-[18px]">
@@ -25,24 +25,21 @@ export default async function Header() {
         </div>
         <ul className="flex  justify-between sm:hidden">
           <li className="px-[20px] hover_text">
-            <Link href={'/'}> 首页</Link>
+            <Link href={"/"}> 首页</Link>
           </li>
           <li className="px-[20px] hover_text">
-            <Link href={'/product'}>产品</Link>
+            <Link href={"/product"}>产品</Link>
           </li>
           <li className="px-[20px] hover_text">
-            <Link href={'/blog'}> 博客</Link>
+            <Link href={"/blog"}> 博客</Link>
           </li>
           <li className="px-[20px] hover_text">
-            <Link href={'/showcase'}> 案例</Link>
-          </li>
-          <li className="px-[20px] hover_text">
-            <Link href={'/docs'}> 文档</Link>
+            <Link href={"/comunity"}>社区</Link>
           </li>
         </ul>
         <div className="flex gap-[10px] justify-end sm:hidden">
           <a
-            href={'https://github.com/Alfred-Lau'}
+            href={"https://github.com/Alfred-Lau"}
             className="px-[20px] hover_text"
           >
             <svg
