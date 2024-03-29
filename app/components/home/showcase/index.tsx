@@ -1,5 +1,11 @@
+'use client';
 import React from 'react';
 import Link from 'next/link';
+import dynamic from 'next/dynamic';
+
+const CardStack = dynamic(() => import('../../CardStack'), {
+  ssr: false,
+});
 
 export default function Showcase() {
   return (
@@ -13,16 +19,8 @@ export default function Showcase() {
           <Link href="showcase">更多</Link>
         </div>
       </div>
-      <div className="flex-1 rounded-2xl shadow">
-        <video
-          src="https://gw.alipayobjects.com/v/huamei_gcee1x/afts/video/jXRBRK_VAwoAAAAAAAAAAAAAK4eUAQBr"
-          autoPlay
-          // 没有下面的一句是不会播放的
-          crossOrigin="anonymous"
-          loop
-          muted
-          className="flex-1 rounded-2xl shadow"
-        ></video>
+      <div className="flex-1 ">
+        <CardStack />
       </div>
     </div>
   );
