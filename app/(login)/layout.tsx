@@ -1,7 +1,3 @@
-import Footer from "@/app/components/Footer";
-import Header from "@/app/components/Header";
-import { SpeedInsights } from "@vercel/speed-insights/next";
-import { Analytics } from "@vercel/analytics/react";
 import "../globals.css";
 import "@/styles/main.scss";
 
@@ -29,13 +25,7 @@ export default function RootLayout({
         content="你的分享值得被时光看见。关注全链路流量和内容的整个生命周期，笔头，专注个人品牌的运营工具，效率提升打造"
       />
       <link rel="icon" href="/favicon.png" sizes="any" />
-      <body>
-        <Header />
-        {children}
-        <Footer />
-        <SpeedInsights />
-        <Analytics />
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
