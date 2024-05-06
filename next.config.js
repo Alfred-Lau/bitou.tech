@@ -1,27 +1,33 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: process.env.NODE_ENV === 'production' ? 'standalone' : undefined,
+  output: process.env.NODE_ENV === "production" ? "standalone" : undefined,
   images: {
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'bitou-tech.oss-cn-hangzhou.aliyuncs.com',
-        port: '',
-        pathname: '/**',
+        protocol: "https",
+        hostname: "bitou-tech.oss-cn-hangzhou.aliyuncs.com",
+        port: "",
+        pathname: "/**",
       },
       {
-        protocol: 'https',
-        hostname: 'upload.wikimedia.org',
-        port: '',
-        pathname: '/**',
+        protocol: "https",
+        hostname: "render.bitou.tech",
+        port: "",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "upload.wikimedia.org",
+        port: "",
+        pathname: "/**",
       },
     ],
   },
   redirects: async () => {
     return [
       {
-        source: '/docs',
-        destination: '/docs/introduction/what-is-bitou/',
+        source: "/docs",
+        destination: "/docs/introduction/what-is-bitou/",
         permanent: true,
       },
     ];
