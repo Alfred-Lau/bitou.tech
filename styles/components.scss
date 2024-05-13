@@ -8,4 +8,9 @@
     @apply mx-auto px-4 pt-[80px];
     max-width: var.$container-width;
   }
+
+  .container-v2 {
+    @apply mx-auto px-4 pt-[80px];
+    max-width: var.$container-width-v2;
+  }
 }

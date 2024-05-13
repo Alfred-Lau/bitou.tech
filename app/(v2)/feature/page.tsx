@@ -1,7 +1,8 @@
 "use client";
 
-import { getUserInfoURL } from "@/app/api/user";
-import React from "react";
+import React from 'react';
+
+import { getUserInfoURL } from '@/app/api/user';
 
 export default function Product() {
   const Products = [
@@ -32,7 +33,7 @@ export default function Product() {
     },
   ];
   return (
-    <div className="container min-h-[calc(100vh-400px)] mt-[60px]">
+    <div className="container-v2 min-h-[calc(100vh-400px)] mt-[60px]">
       <div className="my-[60px]">
         <ul className="grid  gap-[20px]">
           {Products.map((item, index) => {
