@@ -2,13 +2,13 @@ import React from 'react';
 
 import Image from 'next/image';
 
-import Brand from '../components/brand';
-import Custom from '../components/custom';
-import Feature from '../components/feature';
-import Footer from '../components/footer';
-import Nav from '../components/nav';
-import ReadyToGo from '../components/readytogo';
-import User from '../components/user';
+import Brand from './components/brand';
+import Custom from './components/custom';
+import Feature from './components/feature';
+import Footer from './components/footer';
+import Nav from './components/nav';
+import ReadyToGo from './components/readytogo';
+import User from './components/user';
 
 export default function Home() {
   return (
@@ -21,7 +21,7 @@ export default function Home() {
             <div className="text-[80px] font-[800] leading-[90px] text-center">
               Online Creating <br /> Processing Is Easy.
             </div>
-            <div className="text-[20px] font-[500] leading-[30px]">
+            <div className="text-[20px] font-[500] leading-[30px] py-[10px]">
               make online payments and keep track of all your transactions.
             </div>
 

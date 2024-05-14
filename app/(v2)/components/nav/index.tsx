@@ -3,6 +3,8 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
+import I18n from '../i18n';
+
 const ROUTE = [
   {
     name: "Home",
@@ -51,7 +53,7 @@ export default function Nav() {
         </ul>
       </div>
       <div className="text-white flex justify-around items-center w-[180px] ml-auto">
-        <div>i18n</div>
+        <I18n></I18n>
         <div>
           <Link href={"https://work.bitou.tech"}>
             <div className="bg-[#E50F8D] px-[20px] py-[5px] text-white rounded-[32px] text-[16px] hover:cursor-pointer">

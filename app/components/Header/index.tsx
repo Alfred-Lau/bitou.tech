@@ -1,8 +1,11 @@
-import Link from "next/link";
-import Image from "next/image";
-import cls from "classnames";
-import styles from "./index.module.scss";
-import MobileMenu from "../shared/mobile-menu";
+import cls from 'classnames';
+import Image from 'next/image';
+import Link from 'next/link';
+
+import I18n from '@/app/(v2)/components/i18n';
+
+import MobileMenu from '../shared/mobile-menu';
+import styles from './index.module.scss';
 
 // 页头
 export default async function Header() {
@@ -38,6 +41,7 @@ export default async function Header() {
           </li>
         </ul>
         <div className="flex gap-[10px] justify-end sm:hidden">
+          <I18n></I18n>
           <a
             href={"https://github.com/Alfred-Lau"}
             className="px-[20px] hover_text"

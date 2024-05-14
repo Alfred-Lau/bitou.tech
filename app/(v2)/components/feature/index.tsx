@@ -15,20 +15,21 @@ export default function Feature() {
           </div>
           <div className="flex-1">
             <h2 className="text-4xl font-bold">Feature</h2>
-            <p className="text-lg">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.
-              Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.
-              Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris
-              massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti
-              sociosqu ad litora torquent per conubia nostra, per inceptos
-              himenaeos.
+            <p className="text-lg mt-[20px]">
+              Even the smallest of ideas deserve to be seen by more people,
+              because there are like-minded people waiting for you out there in
+              the distance.
             </p>
           </div>
         </div>
       </div>
       <div className="absolute top-[-10px] right-0">
-        <Image src="" alt="" width={40} height={40}></Image>
+        <Image
+          src="https://render.bitou.tech/imgs/corner.png"
+          alt=""
+          width={40}
+          height={40}
+        ></Image>
       </div>
     </div>
   );

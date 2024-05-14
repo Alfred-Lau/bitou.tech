@@ -1,10 +1,12 @@
 "use client";
-import React from "react";
-import Link from "next/link";
-import Image from "next/image";
-import clx from "classnames";
-import styles from "./index.module.scss";
-import Typewriter from "typewriter-effect";
+import React from 'react';
+
+import clx from 'classnames';
+import Image from 'next/image';
+import Link from 'next/link';
+import Typewriter from 'typewriter-effect';
+
+import styles from './index.module.scss';
 
 export default function Banner() {
   return (
@@ -60,7 +62,7 @@ export default function Banner() {
           width={936}
           height={585}
           className="w-[936px] h-[585px] rounded-[20px] shadow sm:w-full sm:h-auto"
-          src="https://bitou-tech.oss-cn-hangzhou.aliyuncs.com/online/iShot_2024-02-20_23.39.24.png"
+          src="https://render.bitou.tech/imgs/iShot_2024-05-14_22.58.28.png"
           // src={bannerImg}
           alt="bitou"
         ></Image>

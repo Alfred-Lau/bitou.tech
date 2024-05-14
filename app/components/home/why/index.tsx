@@ -1,37 +1,38 @@
 import React from 'react';
+
 import Image from 'next/image';
 
 const reasons = [
   {
     id: 1,
-    title: '轻量创作',
+    title: "轻量创作",
     description:
-      '哪怕在校的想法，也值得被更多的人看见，远方正有志同道合的人在等你',
+      "哪怕再小的想法，也值得被更多的人看见，远方正有志同道合的人在等你",
     image:
-      'https://bitou-tech.oss-cn-hangzhou.aliyuncs.com/offline/images/Edit.png',
+      "https://bitou-tech.oss-cn-hangzhou.aliyuncs.com/offline/images/Edit.png",
   },
   {
     id: 2,
-    title: '自定义模板',
+    title: "自定义模板",
     description:
-      '各类持续丰富的模板，更多的自定义能力，移动端搭建能力的支持，让你放飞你的创意',
+      "各类持续丰富的模板，更多的自定义能力，移动端搭建能力的支持，让你放飞你的创意",
     image:
-      'https://bitou-tech.oss-cn-hangzhou.aliyuncs.com/offline/images/Edit.png',
+      "https://bitou-tech.oss-cn-hangzhou.aliyuncs.com/offline/images/Edit.png",
   },
   {
     id: 3,
-    title: 'AI 赋能',
+    title: "AI 赋能",
     description:
-      'bitou 小助手跑步入场，帮你记录文案，启迪思路，整理数据，设计插入，更重要的还能陪你一起成长',
+      "bitou 小助手跑步入场，帮你记录文案，启迪思路，整理数据，设计插入，更重要的还能陪你一起成长",
     image:
-      'https://bitou-tech.oss-cn-hangzhou.aliyuncs.com/offline/images/Edit.png',
+      "https://bitou-tech.oss-cn-hangzhou.aliyuncs.com/offline/images/Edit.png",
   },
   {
     id: 4,
-    title: '流量洞察 & 流程提效',
-    description: '关心你的每一次分享，得到反馈，一次比一次更了解你的习惯',
+    title: "流量洞察 & 流程提效",
+    description: "关心你的每一次分享，得到反馈，一次比一次更了解你的习惯",
     image:
-      'https://bitou-tech.oss-cn-hangzhou.aliyuncs.com/offline/images/Edit.png',
+      "https://bitou-tech.oss-cn-hangzhou.aliyuncs.com/offline/images/Edit.png",
   },
 ];
 
