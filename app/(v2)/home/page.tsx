@@ -31,10 +31,10 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="absolute bottom-[-300px] w-full">
+          <div className="absolute bottom-[-200px] w-full">
             {/* https://render.bitou.tech/imgs/Group.png */}
             <Image
-              src="https://render.bitou.tech/imgs/Group.png"
+              src="https://render.bitou.tech/imgs/iShot_2024-05-14_22.40.05.png"
               alt="bitou"
               width={1090}
               height={677}
