@@ -1,5 +1,7 @@
-import React from "react";
-import Image from "next/image";
+import React from 'react';
+
+import Image from 'next/image';
+import Link from 'next/link';
 
 const ROUTE = [
   {
@@ -48,9 +50,15 @@ export default function Nav() {
           ))}
         </ul>
       </div>
-      <div className="text-white flex justify-around items-center w-[120px] ml-auto">
+      <div className="text-white flex justify-around items-center w-[180px] ml-auto">
         <div>i18n</div>
-        <div>login</div>
+        <div>
+          <Link href={"https://work.bitou.tech"}>
+            <div className="bg-[#E50F8D] px-[20px] py-[5px] text-white rounded-[32px] text-[16px] hover:cursor-pointer">
+              Start Now
+            </div>
+          </Link>
+        </div>
       </div>
     </div>
   );
