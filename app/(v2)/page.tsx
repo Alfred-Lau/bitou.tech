@@ -5,7 +5,6 @@ import Image from 'next/image';
 import Brand from './components/brand';
 import Custom from './components/custom';
 import Feature from './components/feature';
-import Footer from './components/footer';
 import Nav from './components/nav';
 import ReadyToGo from './components/readytogo';
 import User from './components/user';
@@ -50,7 +49,6 @@ export default function Home() {
       <Feature></Feature>
       <Custom></Custom>
       <ReadyToGo></ReadyToGo>
-      <Footer></Footer>
     </div>
   );
 }

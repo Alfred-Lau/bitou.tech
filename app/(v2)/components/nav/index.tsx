@@ -7,12 +7,12 @@ import I18n from '../i18n';
 
 const ROUTE = [
   {
-    name: "Home",
-    path: "/",
-  },
-  {
     name: "Feature",
     path: "/feature",
+  },
+  {
+    name: "Docs",
+    path: "/docs",
   },
   {
     name: "Blog",
@@ -20,11 +20,13 @@ const ROUTE = [
   },
   {
     name: "Community",
-    path: "/community",
+    path: "https://pen.bitou.tech/",
   },
 ];
 
-export default function Nav() {
+export default function Nav(props) {
+  const { textColor, bgColor } = props;
+  const textWhite = textColor || "text-white";
   return (
     <div className="w-[1090px] m-[auto] pt-[48px] flex">
       <div>
@@ -38,13 +40,17 @@ export default function Nav() {
               borderRadius: "39%",
             }}
           />
-          <h1 className="text-white text-2xl  leading-20  ml-[20px] sm:text-[18px]">
-            Bitou
+          <h1
+            className={`${textWhite} text-2xl  leading-20  ml-[20px] sm:text-[18px]`}
+          >
+            <Link href={"/"}>Bitou</Link>
           </h1>
         </div>
       </div>
       <div>
-        <ul className="flex text-white items-center justify-center h-full px-[40px]">
+        <ul
+          className={`flex ${textWhite} items-center justify-center h-full px-[40px]`}
+        >
           {ROUTE.map((item) => (
             <li key={item.name} className="px-[20px] hover_text">
               <a href={item.path}>{item.name}</a>
@@ -52,11 +58,15 @@ export default function Nav() {
           ))}
         </ul>
       </div>
-      <div className="text-white flex justify-around items-center w-[180px] ml-auto">
+      <div
+        className={`${textWhite} flex justify-around items-center w-[180px] ml-auto`}
+      >
         <I18n></I18n>
         <div>
           <Link href={"https://work.bitou.tech"}>
-            <div className="bg-[#E50F8D] px-[20px] py-[5px] text-white rounded-[32px] text-[16px] hover:cursor-pointer">
+            <div
+              className={`bg-[#E50F8D] px-[20px] py-[5px] ${textWhite} rounded-[32px] text-[16px] hover:cursor-pointer`}
+            >
               Start Now
             </div>
           </Link>

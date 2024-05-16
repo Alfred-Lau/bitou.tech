@@ -4,6 +4,8 @@ import React from 'react';
 
 import { getUserInfoURL } from '@/app/api/user';
 
+import Nav from '../components/nav';
+
 export default function Product() {
   const Products = [
     {
@@ -33,35 +35,38 @@ export default function Product() {
     },
   ];
   return (
-    <div className="container-v2 min-h-[calc(100vh-400px)] mt-[60px]">
-      <div className="my-[60px]">
-        <ul className="grid  gap-[20px]">
-          {Products.map((item, index) => {
-            return (
-              <li className="border rounded-[4px] h-[300px]" key={item.id}>
-                <div className="flex justify-center items-center h-full">
-                  <span>{item.title}</span>
+    <>
+      <Nav textColor="#000" bgColor="#fff"></Nav>
+      <div className="container-v2 min-h-[calc(100vh-400px)] mt-[60px]">
+        <div className="my-[60px]">
+          <ul className="grid  gap-[20px]">
+            {Products.map((item, index) => {
+              return (
+                <li className="border rounded-[4px] h-[300px]" key={item.id}>
+                  <div className="flex justify-center items-center h-full">
+                    <span>{item.title}</span>
 
-                  <div>
-                    {item.handler ? (
-                      <span onClick={item.handler}> {item.btnText}</span>
-                    ) : (
-                      <a
-                        href={item.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="block w-[120px] h-[40px] leading-[40px] text-center text-white bg-blue-500 rounded-[4px] "
-                      >
-                        {item.btnText}
-                      </a>
-                    )}
+                    <div>
+                      {item.handler ? (
+                        <span onClick={item.handler}> {item.btnText}</span>
+                      ) : (
+                        <a
+                          href={item.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="block w-[120px] h-[40px] leading-[40px] text-center text-white bg-blue-500 rounded-[4px] "
+                        >
+                          {item.btnText}
+                        </a>
+                      )}
+                    </div>
                   </div>
-                </div>
-              </li>
-            );
-          })}
-        </ul>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
       </div>
-    </div>
+    </>
   );
 }

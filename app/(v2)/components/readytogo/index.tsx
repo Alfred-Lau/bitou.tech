@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function ReadyToGo() {
   return (
     <div className="container-v2">
@@ -7,11 +9,13 @@ export default function ReadyToGo() {
           Ready To Get Started ?
         </div>
 
-        <div>make online payments and keep track of all your transactions.</div>
+        <div className="my-[10px]">
+          make online payments and keep track of all your transactions.
+        </div>
 
         <div>
           <div className="bg-[#E50F8D] px-[42px] py-[15px] text-white rounded-[40px] mt-[12px]">
-            Go to Studio!
+            <Link href={"https://work.bitou.tech"}>Go to Studio!</Link>
           </div>
         </div>
       </div>
