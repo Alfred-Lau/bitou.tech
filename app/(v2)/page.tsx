@@ -33,7 +33,7 @@ export default function Home() {
           <div className="absolute bottom-[-200px] w-full">
             {/* https://render.bitou.tech/imgs/Group.png */}
             <Image
-              src="https://render.bitou.tech/imgs/iShot_2024-05-14_22.40.05.png"
+              src="https://render.bitou.tech/imgs/iShot_2024-05-22_00.05.26.png"
               alt="bitou"
               width={1090}
               height={677}
