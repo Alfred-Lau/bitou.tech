@@ -1,12 +1,15 @@
-import '../globals.css';
-import '@/styles/main.scss';
+import "../globals.css";
+import "@/styles/main.scss";
 
-import Footer from './components/footer';
+import Script from "next/script";
+
+import Footer from "./components/footer";
 
 export const metadata = {
-  title: "笔头 - 你的首席内容官 - 专注个人品牌的运营工具，效率提升打造",
+  title:
+    "Bitou - Your Chief Content Officer - Focus on Online Content Creation and Sharing",
   description:
-    "你的分享值得被时光看见。关注全链路流量和内容的整个生命周期，笔头，专注个人品牌的运营工具，效率提升打造",
+    "Your sharing deserves to be seen by time. Focusing on the entire lifecycle of full-link traffic and content, Bitou specializes in online content creation and sharing.",
 };
 
 export default function RootLayout({
@@ -16,7 +19,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="light">
-      <meta property="og:title" content="笔头 - 你的首席内容官" />
+      <meta
+        property="og:title"
+        content="Bitou - Your Chief Content Officer - Focus on Online Content Creation and Sharing"
+      />
       <meta property="og:url" content="https://bitou.tech/" />
       <meta
         property="og:image"
@@ -24,9 +30,10 @@ export default function RootLayout({
       />
       <meta
         property="og:description"
-        content="你的分享值得被时光看见。关注全链路流量和内容的整个生命周期，笔头，专注个人品牌的运营工具，效率提升打造"
+        content="Your sharing deserves to be seen by time. Focusing on the entire lifecycle of full-link traffic and content, Bitou specializes in online content creation and sharing."
       />
       <link rel="icon" href="/favicon.png" sizes="any" />
+      <Script src="https://bitou-tracert.oss-cn-hangzhou.aliyuncs.com/index.browser.js"></Script>
       <body>
         {children}
         <Footer></Footer>

@@ -1,12 +1,13 @@
-import Footer from "@/app/components/Footer";
-import Header from "@/app/components/Header";
 import "../globals.css";
 import "@/styles/main.scss";
 
+import Footer from "@/app/components/Footer";
+import Header from "@/app/components/Header";
+
 export const metadata = {
-  title: "笔头 - 你的首席内容官 - 专注个人品牌的运营工具，效率提升打造",
+  title: "笔头 - 你的首席内容官 - 专注线上内容创作分享",
   description:
-    "你的分享值得被时光看见。关注全链路流量和内容的整个生命周期，笔头，专注个人品牌的运营工具，效率提升打造",
+    "你的分享值得被时光看见。关注全链路流量和内容的整个生命周期，笔头，专注线上内容创作分享",
 };
 
 export default function RootLayout({
@@ -16,7 +17,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="light">
-      <meta property="og:title" content="笔头 - 你的首席内容官" />
+      <meta
+        property="og:title"
+        content="笔头 - 你的首席内容官 - 专注线上内容创作分享"
+      />
       <meta property="og:url" content="https://bitou.tech/" />
       <meta
         property="og:image"
@@ -24,7 +28,7 @@ export default function RootLayout({
       />
       <meta
         property="og:description"
-        content="你的分享值得被时光看见。关注全链路流量和内容的整个生命周期，笔头，专注个人品牌的运营工具，效率提升打造"
+        content="你的分享值得被时光看见。关注全链路流量和内容的整个生命周期，笔头，专注线上内容创作分享"
       />
       <link rel="icon" href="/favicon.png" sizes="any" />
       <body>
