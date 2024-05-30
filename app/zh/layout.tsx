@@ -3,6 +3,8 @@ import "@/styles/main.scss";
 
 import Footer from "@/app/components/Footer";
 import Header from "@/app/components/Header";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata = {
   title: "笔头 - 你的首席内容官 - 专注线上内容创作分享",
@@ -35,6 +37,8 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );

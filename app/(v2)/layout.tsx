@@ -3,6 +3,9 @@ import "@/styles/main.scss";
 
 import Script from "next/script";
 
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
 import Footer from "./components/footer";
 
 export const metadata = {
@@ -37,6 +40,8 @@ export default function RootLayout({
       <body>
         {children}
         <Footer></Footer>
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
