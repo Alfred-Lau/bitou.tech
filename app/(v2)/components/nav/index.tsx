@@ -53,7 +53,7 @@ export default function Nav(props) {
         >
           {ROUTE.map((item) => (
             <li key={item.name} className="px-[20px] hover_text">
-              <a href={item.path}>{item.name}</a>
+              <Link href={item.path}>{item.name}</Link>
             </li>
           ))}
         </ul>
