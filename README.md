@@ -1,4 +1,3 @@
-bitou 站点
+bitou website
 
-pm2 start npm --name bitou-website -- run start
-pm2 start npm --name bitou-backend -- run start:prod
+[![deploy bitou.tech to server](https://github.com/Alfred-Lau/bitou.tech/actions/workflows/docker-cdn.yml/badge.svg)](https://github.com/Alfred-Lau/bitou.tech/actions/workflows/docker-cdn.yml)
