@@ -44,6 +44,7 @@ export default function Footer() {
           <div>
             <p>© 2024 Bitou Tech</p>
           </div>
+          <span className="mx-2">|</span>
           <div>
             <a href="" className="text-black">
               Privacy Policy
