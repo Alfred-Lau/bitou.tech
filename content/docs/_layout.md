@@ -1,22 +1,80 @@
 ---
 # expand_section_list is the list of default expanded sections.
-expand_section_list: ['介绍', '三步上手']
+expand_section_list: ['产品介绍', '快速入门']
 ---
 
-## 介绍
+## 产品介绍
 
-### [概述](/introduction/what-is-bitou)
+### [动态和公告](/introduction/announcement)
 
-### [产品](/introduction/supported-databases)
+### [产品简介](/introduction/what-is-bitou)
 
-### [用户故事](/introduction/use-cases)
+### [产品计费](/introduction/price)
 
-### [更新日志](/faq)
+## 快速入门
 
-## 三步上手
+### 新手指引
 
-#### [首先，先写点什么](/get-started/step-by-step/register-accounts)
+### 通过控制台使用笔头
 
-#### [接着，装饰下你的内容](/get-started/step-by-step/manage-members)
+### 通过编码和黑屏使用笔头
 
-#### [最后，照顾你的内容吧](/get-started/step-by-step/set-up-environments)
+## 操作指南
+
+### 快速引导
+
+### 文件
+
+### 数据
+
+### 素材
+
+### 合集
+
+### 灵感
+
+### 社区
+
+### 实验室
+
+## 实践教程
+
+### 场景最佳实践
+
+### AI 绘画
+
+### 灵感写作
+
+### 创建 AI 教练
+
+### data2chart
+
+### 激活存量笔记
+
+## 安全合规
+
+### 境内境外使用
+
+### 个人和团队账号使用
+
+## 开发参考
+
+### 黑屏工具
+
+### 配套插件
+
+### Open API
+
+## 服务支持
+
+### 常见问题
+
+### 故障排除
+
+#### AI 模型问题
+
+#### 内容管理问题
+
+## 视频专区
+
+### 几个 B 站链接
