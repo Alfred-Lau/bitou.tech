@@ -10,12 +10,12 @@ export default function ReadyToGo() {
         </div>
 
         <div className="my-[10px]">
-          make online payments and keep track of all your transactions.
+          make online creation and keep track of all your sparkles.
         </div>
 
         <div>
           <div className="bg-[#E50F8D] px-[42px] py-[15px] text-white rounded-[40px] mt-[12px]">
-            <Link href={"https://work.bitou.tech"}>Go to Studio!</Link>
+            <Link href={'https://work.bitou.tech'}>Go to Studio!</Link>
           </div>
         </div>
       </div>

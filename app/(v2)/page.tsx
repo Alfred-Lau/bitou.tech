@@ -21,7 +21,7 @@ export default function Home() {
               Online Creating <br /> Processing Is Easy.
             </div>
             <div className="text-[20px] font-[500] leading-[30px] py-[10px]">
-              make online payments and keep track of all your transactions.
+              make online creation and keep track of all your sparkles.
             </div>
 
             <div>
