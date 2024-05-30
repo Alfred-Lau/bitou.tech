@@ -43,10 +43,19 @@ export default function Home() {
         </div>
         <User></User>
       </div>
-      <Feature></Feature>
+      <Feature
+        title="AI Powered"
+        desc="We use the latest AI technology to make your work easier and faster."
+      ></Feature>
       <Brand></Brand>
-      <Feature></Feature>
-      <Feature></Feature>
+      <Feature
+        title="Data Driven"
+        desc=" We use data to make your work easier and faster."
+      ></Feature>
+      <Feature
+        title="Opensource and Much functionality"
+        desc="cooperate and share with the community, and have more functions."
+      ></Feature>
       <Custom></Custom>
       <ReadyToGo></ReadyToGo>
     </div>

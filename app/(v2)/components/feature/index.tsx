@@ -1,6 +1,7 @@
 import Image from 'next/image';
 
-export default function Feature() {
+export default function Feature(props) {
+  const { title, desc } = props;
   return (
     <div className="bg-[#FBFBFB] relative">
       <div className="container-v2">
@@ -14,12 +15,8 @@ export default function Feature() {
             ></Image>
           </div>
           <div className="flex-1">
-            <h2 className="text-4xl font-bold">Feature</h2>
-            <p className="text-lg mt-[20px]">
-              Even the smallest of ideas deserve to be seen by more people,
-              because there are like-minded people waiting for you out there in
-              the distance.
-            </p>
+            <h2 className="text-4xl font-bold">{title}</h2>
+            <p className="text-lg mt-[20px]">{desc}</p>
           </div>
         </div>
       </div>
