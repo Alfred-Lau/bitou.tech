@@ -7,10 +7,6 @@ import I18n from '../i18n';
 
 const ROUTE = [
   {
-    name: 'Feature',
-    path: '/feature',
-  },
-  {
     name: 'Docs',
     path: '/docs',
   },
@@ -21,6 +17,10 @@ const ROUTE = [
   {
     name: 'Community',
     path: 'https://pen.bitou.tech/',
+  },
+  {
+    name: 'About',
+    path: '/about',
   },
 ];
 
