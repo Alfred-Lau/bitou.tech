@@ -1,44 +1,54 @@
-'use client';
+"use client";
 
-import React from 'react';
+import React from "react";
 
-import { getUserInfoURL } from '@/app/api/user';
-
-import Nav from '../components/nav';
+import Nav from "../components/nav";
 
 export default function Product() {
-  const Products = [
-    {
-      id: 0,
-      title: 'bitou AI 平台',
-      btnText: '开始使用',
-      img: '',
-      link: 'https://work.bitou.tech',
-    },
-    {
-      id: 1,
-      title: 'bitou AI 内容客户端',
-      btnText: '下载试用',
-      link: 'https://work.bitou.tech',
-      img: '',
-      handler: async () => {
-        const user = await getUserInfoURL({});
-        console.log('🚀 ~ handler: ~ user:', user);
-      },
-    },
-    {
-      id: 2,
-      title: 'penjs 博客',
-      btnText: '浏览',
-      img: '',
-      link: 'https://pen.bitou.tech',
-    },
-  ];
   return (
     <>
       <Nav textColor="#000" bgColor="#fff"></Nav>
       <div className="container-v2 min-h-[calc(100vh-400px)] mt-[60px]">
-        milestone，product， profile，team，contact， mission
+        {/* profile  & mission*/}
+        <div className="flex justify-center items-center h-[80vh]">
+          <div className="flex flex-col items-center">
+            <h1 className="text-4xl font-bold">About Us</h1>
+            <p className="text-center mt-4">
+              We are a team of developers who are passionate about creating
+              tools to help other developers. Our mission is to create products
+              that are easy to use and help developers be more productive.
+            </p>
+          </div>
+        </div>
+        {/* developer */}
+        <div>
+          <div className="flex justify-center items-center h-[80vh]">
+            <div className="flex flex-col items-center">
+              <h1 className="text-4xl font-bold">Our Team</h1>
+              <p className="text-center mt-4">
+                We are a team of developers who are passionate about creating
+                tools to help other developers. Our mission is to create
+                products that are easy to use and help developers be more
+                productive.
+              </p>
+            </div>
+          </div>
+        </div>
+        {/* product */}
+
+        <div>开发的产品</div>
+        {/* contact */}
+
+        <div>
+          {/* 如何联系开发者   */}
+          <div className="flex">
+            <div>how to contact</div>
+            <div>
+              <div>github 地址</div>
+              <div>blog 地址</div>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
