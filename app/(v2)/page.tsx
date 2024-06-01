@@ -1,13 +1,13 @@
-import React from 'react';
+import React from "react";
 
-import Image from 'next/image';
+import Image from "next/image";
 
-import Brand from './components/brand';
-import Custom from './components/custom';
-import Feature from './components/feature';
-import Nav from './components/nav';
-import ReadyToGo from './components/readytogo';
-import User from './components/user';
+import Brand from "./components/brand";
+import Custom from "./components/custom";
+import Feature from "./components/feature";
+import Nav from "./components/nav";
+import ReadyToGo from "./components/readytogo";
+import User from "./components/user";
 
 export default function Home() {
   return (

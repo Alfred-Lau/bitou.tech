@@ -1,32 +1,32 @@
-import React from 'react';
+import React from "react";
 
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 
-import I18n from '../i18n';
+import I18n from "../i18n";
 
 const ROUTE = [
   {
-    name: 'Docs',
-    path: '/docs',
+    name: "Docs",
+    path: "/docs",
   },
   {
-    name: 'Blog',
-    path: '/blog',
+    name: "Blog",
+    path: "/blog",
   },
   {
-    name: 'Community',
-    path: 'https://pen.bitou.tech/',
+    name: "Community",
+    path: "https://pen.bitou.tech/",
   },
-  {
-    name: 'About',
-    path: '/about',
-  },
+  // {
+  //   name: 'About',
+  //   path: '/about',
+  // },
 ];
 
 export default function Nav(props) {
   const { textColor, bgColor } = props;
-  const textWhite = textColor || 'text-white';
+  const textWhite = textColor || "text-white";
   return (
     <div className="w-[1090px] m-[auto] pt-[48px] flex">
       <div>
@@ -37,13 +37,13 @@ export default function Nav(props) {
             width={48}
             height={48}
             style={{
-              borderRadius: '39%',
+              borderRadius: "39%",
             }}
           />
           <h1
             className={`${textWhite} text-2xl  leading-20  ml-[20px] sm:text-[18px]`}
           >
-            <Link href={'/'}>Bitou</Link>
+            <Link href={"/"}>Bitou</Link>
           </h1>
         </div>
       </div>
@@ -63,7 +63,7 @@ export default function Nav(props) {
       >
         <I18n></I18n>
         <div>
-          <Link href={'https://work.bitou.tech'}>
+          <Link href={"https://work.bitou.tech"}>
             <div
               className={`bg-[#E50F8D] px-[20px] py-[5px] ${textWhite} rounded-[32px] text-[16px] hover:cursor-pointer`}
             >
