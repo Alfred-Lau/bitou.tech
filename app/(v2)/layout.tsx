@@ -29,7 +29,7 @@ export async function generateMetadata({ params }) {
     keywords: meta.keywords,
     url: meta.url,
     alternates: {
-      canonical: url,
+      canonical: meta.url,
     },
     openGraph: {
       title: meta.title,
