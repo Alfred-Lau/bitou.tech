@@ -42,7 +42,7 @@ export async function generateMetadata({ params }) {
         },
       ],
     },
-  } as Metadata;
+  };
 }
 
 
