@@ -1,8 +1,8 @@
 "use client";
 
-import React from 'react';
+import React from "react";
 
-import { getUserInfoURL } from '@/app/api/user';
+import { getUserInfoURL } from "@/app/api/user";
 
 export default function Product() {
   const Products = [
@@ -20,15 +20,15 @@ export default function Product() {
       link: "https://work.bitou.tech",
       img: "",
       handler: async () => {
-        const user = await getUserInfoURL({});
+        const user = await getUserInfoURL({}, {});
       },
     },
     {
       id: 2,
-      title: "penjs 博客",
+      title: "博客",
       btnText: "浏览",
       img: "",
-      link: "https://pen.bitou.tech",
+      link: "https://datafun.bitou.tech",
     },
   ];
   return (

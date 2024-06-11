@@ -26,7 +26,6 @@ const ROUTE = [
 
 export default async function Nav(props) {
   const { textColor, data } = props;
-  console.log("🚀 ~ Nav ~ data:", data);
   const textWhite = textColor || "text-white";
 
   return (
