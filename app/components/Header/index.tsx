@@ -1,11 +1,11 @@
-import cls from 'classnames';
-import Image from 'next/image';
-import Link from 'next/link';
+import cls from "classnames";
+import Image from "next/image";
+import Link from "next/link";
 
-import I18n from '@/app/(v2)/components/i18n';
+import I18n from "@/app/(v2)/components/i18n";
 
-import MobileMenu from '../shared/mobile-menu';
-import styles from './index.module.scss';
+import MobileMenu from "../shared/mobile-menu";
+import styles from "./index.module.scss";
 
 // 页头
 export default async function Header() {

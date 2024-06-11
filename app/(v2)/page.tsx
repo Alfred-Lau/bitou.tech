@@ -1,6 +1,7 @@
 import React from "react";
 
 import Image from "next/image";
+import Link from "next/link";
 
 import Brand from "./components/brand";
 import Custom from "./components/custom";
@@ -25,9 +26,11 @@ export default function Home() {
             </div>
 
             <div>
-              <div className="bg-[#E50F8D] px-[42px] py-[15px] text-white rounded-[40px] mt-[12px]">
-                Download Desktop App
-              </div>
+              <Link href={"https://work.bitou.tech"}>
+                <div className="bg-[#E50F8D] px-[42px] py-[15px] text-white rounded-[40px] mt-[12px]">
+                  Start Now
+                </div>
+              </Link>
             </div>
           </div>
           <div className="absolute bottom-[-200px] w-full">

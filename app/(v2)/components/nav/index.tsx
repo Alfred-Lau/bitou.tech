@@ -1,7 +1,10 @@
 import React from "react";
 
+import { cookies } from "next/headers";
 import Image from "next/image";
 import Link from "next/link";
+
+import { getUserInfoURL } from "@/app/api/user";
 
 import I18n from "../i18n";
 
@@ -24,9 +27,19 @@ const ROUTE = [
   // },
 ];
 
-export default function Nav(props) {
+export default async function Nav(props) {
   const { textColor, bgColor } = props;
+  const cks = cookies();
   const textWhite = textColor || "text-white";
+
+  const { data } = await getUserInfoURL(
+    {},
+    {
+      headers: {
+        authorization: cks.get("authorization")?.value,
+      },
+    }
+  );
   return (
     <div className="w-[1090px] m-[auto] pt-[48px] flex">
       <div>
@@ -63,13 +76,11 @@ export default function Nav(props) {
       >
         <I18n></I18n>
         <div>
-          <Link href={"https://work.bitou.tech"}>
-            <div
-              className={`bg-[#E50F8D] px-[20px] py-[5px] ${textWhite} rounded-[32px] text-[16px] hover:cursor-pointer`}
-            >
-              Start Now
-            </div>
-          </Link>
+          {data ? (
+            <span>{data.username}</span>
+          ) : (
+            <span className="hover:cursor-pointer">Login</span>
+          )}
         </div>
       </div>
     </div>

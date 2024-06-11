@@ -1,7 +1,8 @@
 "use client";
 
-import { getUserInfoURL } from "@/app/api/user";
-import React from "react";
+import React from 'react';
+
+import { getUserInfoURL } from '@/app/api/user';
 
 export default function Product() {
   const Products = [
@@ -20,7 +21,6 @@ export default function Product() {
       img: "",
       handler: async () => {
         const user = await getUserInfoURL({});
-        console.log("🚀 ~ handler: ~ user:", user);
       },
     },
     {
