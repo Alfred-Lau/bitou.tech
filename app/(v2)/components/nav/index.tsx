@@ -1,10 +1,7 @@
 import React from "react";
 
-import { cookies } from "next/headers";
 import Image from "next/image";
 import Link from "next/link";
-
-import { getUserInfoURL } from "@/app/api/user";
 
 import I18n from "../i18n";
 
@@ -28,18 +25,10 @@ const ROUTE = [
 ];
 
 export default async function Nav(props) {
-  const { textColor, bgColor } = props;
-  const cks = cookies();
+  const { textColor, data } = props;
+  console.log("🚀 ~ Nav ~ data:", data);
   const textWhite = textColor || "text-white";
 
-  const { data } = await getUserInfoURL(
-    {},
-    {
-      headers: {
-        authorization: cks.get("authorization")?.value,
-      },
-    }
-  );
   return (
     <div className="w-[1090px] m-[auto] pt-[48px] flex">
       <div>

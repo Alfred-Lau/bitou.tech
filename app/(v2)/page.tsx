@@ -1,7 +1,10 @@
 import React from "react";
 
+import { cookies } from "next/headers";
 import Image from "next/image";
 import Link from "next/link";
+
+import { getUserInfoURL } from "@/app/api/user";
 
 import Brand from "./components/brand";
 import Custom from "./components/custom";
@@ -10,12 +13,22 @@ import Nav from "./components/nav";
 import ReadyToGo from "./components/readytogo";
 import User from "./components/user";
 
-export default function Home() {
+export default async function Home() {
+  const cks = cookies();
+
+  const { data: userInfo } = await getUserInfoURL(
+    {},
+    {
+      headers: {
+        authorization: cks.get("authorization")?.value,
+      },
+    }
+  );
   return (
     <div>
       <div>
         <div className="relative bg-[url('https://render.bitou.tech/imgs/banner.png')] bg-no-repeat bg-center bg-cover min-h-[1024px]">
-          <Nav />
+          <Nav data={userInfo} />
           <div className="flex justify-center items-center mt-[85px] text-white flex-col">
             <span></span>
             <div className="text-[80px] font-[800] leading-[90px] text-center">
