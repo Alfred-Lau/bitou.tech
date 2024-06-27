@@ -1,17 +1,17 @@
-import React from "react";
+import React from 'react';
 
-import { cookies } from "next/headers";
-import Image from "next/image";
-import Link from "next/link";
+import { cookies } from 'next/headers';
+import Image from 'next/image';
+import Link from 'next/link';
 
-import { getUserInfoURL } from "@/app/api/user";
+import { getUserInfoURL } from '@/app/api/user';
 
-import Brand from "./components/brand";
-import Custom from "./components/custom";
-import Feature from "./components/feature";
-import Nav from "./components/nav";
-import ReadyToGo from "./components/readytogo";
-import User from "./components/user";
+import Brand from './components/brand';
+import Custom from './components/custom';
+import Feature from './components/feature';
+import Nav from './components/nav';
+import ReadyToGo from './components/readytogo';
+import User from './components/user';
 
 export default async function Home() {
   const cks = cookies();
@@ -20,15 +20,15 @@ export default async function Home() {
     {},
     {
       headers: {
-        authorization: cks.get("authorization")?.value,
+        authorization: cks.get('authorization')?.value,
       },
-    }
+    },
   );
   return (
     <div>
       <div>
-        <div className="relative bg-[url('https://render.bitou.tech/imgs/banner.png')] bg-no-repeat bg-center bg-cover min-h-[1024px]">
-          <Nav data={userInfo} />
+        <div className="relative bg-[url('https://render.bitou.tech/imgs/banner.png')] bg-no-repeat bg-center bg-cover min-h-[1024px] bg-[#e50f8d]">
+          <Nav />
           <div className="flex justify-center items-center mt-[85px] text-white flex-col">
             <span></span>
             <div className="text-[80px] font-[800] leading-[90px] text-center">
@@ -39,7 +39,7 @@ export default async function Home() {
             </div>
 
             <div>
-              <Link href={"https://work.bitou.tech"}>
+              <Link href={'https://work.bitou.tech'}>
                 <div className="bg-[#E50F8D] px-[42px] py-[15px] text-white rounded-[40px] mt-[12px]">
                   Start Now
                 </div>
