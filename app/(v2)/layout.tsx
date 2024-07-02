@@ -70,14 +70,8 @@ export default function RootLayout({
         content="Your sharing deserves to be seen by time. Focusing on the entire lifecycle of full-link traffic and content, Bitou specializes in online content creation and sharing."
       />
       <link rel="icon" href="/favicon.png" sizes="any" />
-     <script type="text/javascript">
-    (function(c:any,l:any,a:any,r:any,i:any,t?:any,y?:any){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "n0zjefjzpq");
-      </script>
       <Script src="https://bitou-tracert.oss-cn-hangzhou.aliyuncs.com/index.browser.js"></Script>
+      <Script src="https://www.clarity.ms/tag/n0z793avxp" ></Script>
       <body>
         {children}
         <Footer></Footer>
