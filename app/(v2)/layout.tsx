@@ -7,6 +7,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 import Footer from "./components/footer";
+import ScriptContainer from "../components/ScriptContainer"
 
  const meta = {
   title:
@@ -71,10 +72,10 @@ export default function RootLayout({
       />
       <link rel="icon" href="/favicon.png" sizes="any" />
       <Script src="https://bitou-tracert.oss-cn-hangzhou.aliyuncs.com/index.browser.js"></Script>
-      <Script src="https://www.clarity.ms/tag/n0zjefjzpq" ></Script>
       <body>
         {children}
         <Footer></Footer>
+        <ScriptContainer />
         <Analytics />
         <SpeedInsights />
       </body>
