@@ -71,7 +71,7 @@ export default function RootLayout({
       />
       <link rel="icon" href="/favicon.png" sizes="any" />
       <Script src="https://bitou-tracert.oss-cn-hangzhou.aliyuncs.com/index.browser.js"></Script>
-      <Script src="https://www.clarity.ms/tag/n0z793avxp" ></Script>
+      <Script src="https://www.clarity.ms/tag/n0zjefjzpq" ></Script>
       <body>
         {children}
         <Footer></Footer>
