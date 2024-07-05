@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
-import Image from "next/image";
-import Link from "next/link";
+import Image from 'next/image';
+import Link from 'next/link';
 
-import I18n from "../i18n";
+import I18n from '../i18n';
 
 const ROUTE = [
   {
@@ -29,7 +29,7 @@ export default async function Nav(props) {
   const textWhite = textColor || "text-white";
 
   return (
-    <div className="w-[1090px] m-[auto] pt-[48px] flex">
+    <div className="flex p-[6px_8px] md:w-[1090px] md:m-[auto] md:pt-[48px] ">
       <div>
         <div className="flex items-center hover:cursor-pointer">
           <Image
@@ -48,7 +48,7 @@ export default async function Nav(props) {
           </h1>
         </div>
       </div>
-      <div className="w-[calc(100%-200px)]">
+      <div className="hidden md:w-[calc(100%-200px)] md:block">
         <ul
           className={`flex ${textWhite} items-center justify-center h-full px-[40px]`}
         >
@@ -62,7 +62,9 @@ export default async function Nav(props) {
       <div
         className={`${textWhite} flex justify-around items-center w-[180px] ml-auto`}
       >
-        <I18n></I18n>
+        <div className="hidden md:block">
+          <I18n></I18n>
+        </div>
         <div>
           {data ? (
             <span>{data.username}</span>

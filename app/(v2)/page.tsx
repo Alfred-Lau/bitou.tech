@@ -1,17 +1,17 @@
-import React from "react";
+import React from 'react';
 
-import { cookies } from "next/headers";
-import Image from "next/image";
-import Link from "next/link";
+import { cookies } from 'next/headers';
+import Image from 'next/image';
+import Link from 'next/link';
 
-import { getUserInfoURL } from "@/app/api/user";
+import { getUserInfoURL } from '@/app/api/user';
 
-import Brand from "./components/brand";
-import Custom from "./components/custom";
-import Feature from "./components/feature";
-import Nav from "./components/nav";
-import ReadyToGo from "./components/readytogo";
-import User from "./components/user";
+import Brand from './components/brand';
+import Custom from './components/custom';
+import Feature from './components/feature';
+import Nav from './components/nav';
+import ReadyToGo from './components/readytogo';
+import User from './components/user';
 
 export default async function Home() {
   const cks = cookies();
@@ -27,14 +27,14 @@ export default async function Home() {
   return (
     <div>
       <div>
-        <div className="relative bg-[url('https://render.bitou.tech/imgs/banner.png')] bg-no-repeat bg-center bg-cover min-h-[1024px]">
+        <div className="relative bg-[url('https://render.bitou.tech/imgs/banner.png')] bg-no-repeat bg-center bg-cover md:min-h-[1024px]">
           <Nav data={userInfo} />
           <div className="flex justify-center items-center mt-[85px] text-white flex-col">
             <span></span>
-            <div className="text-[80px] font-[800] leading-[90px] text-center">
+            <div className="text-[32px] leading-[50px] md:text-[80px] font-[800] md:leading-[90px] text-center">
               Online Creating <br /> Processing Is Easy.
             </div>
-            <div className="text-[20px] font-[500] leading-[30px] py-[10px]">
+            <div className="px-[20px] py-[20px] text-center text-[20px] leading-[30px]  font-[500] md:leading-[30px] md:py-[10px]">
               make online creation and keep track of all your sparkles.
             </div>
 
