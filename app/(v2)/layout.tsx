@@ -1,13 +1,13 @@
-import "../globals.css";
-import "@/styles/main.scss";
+import '../globals.css';
+import '@/styles/main.scss';
 
-import Script from "next/script";
+import Script from 'next/script';
 
-import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
-import Footer from "./components/footer";
-import ScriptContainer from "../components/ScriptContainer";
+import ScriptContainer from '../components/ScriptContainer';
+import Footer from './components/footer';
 
 const meta = {
   title:
