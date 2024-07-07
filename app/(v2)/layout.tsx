@@ -1,12 +1,13 @@
-import '../globals.css';
-import '@/styles/main.scss';
+import "../globals.css";
+import "@/styles/main.scss";
 
-import Script from 'next/script';
+import Script from "next/script";
 
-import { Analytics } from '@vercel/analytics/react';
-import { SpeedInsights } from '@vercel/speed-insights/next';
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
-import Footer from './components/footer';
+import Footer from "./components/footer";
+import ScriptContainer from "../components/ScriptContainer";
 
 const meta = {
   title:
@@ -68,6 +69,7 @@ export default function RootLayout({
       <body>
         {children}
         <Footer></Footer>
+        <ScriptContainer />
         <Analytics />
         <SpeedInsights />
       </body>

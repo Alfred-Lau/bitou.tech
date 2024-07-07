@@ -27,8 +27,8 @@ export default async function Home() {
   return (
     <div>
       <div>
-        <div className="relative bg-[url('https://render.bitou.tech/imgs/banner.png')] bg-no-repeat bg-center bg-cover md:min-h-[1024px]">
-          <Nav data={userInfo} />
+        <div className="relative bg-[url('https://render.bitou.tech/imgs/banner.png')] bg-no-repeat bg-center bg-cover min-h-[1024px] bg-[#e50f8d]">
+          <Nav />
           <div className="flex justify-center items-center mt-[85px] text-white flex-col">
             <span></span>
             <div className="text-[32px] leading-[50px] md:text-[80px] font-[800] md:leading-[90px] text-center">
