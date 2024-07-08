@@ -1,3 +1,3 @@
-[bitou website](https://bitou.tech/)
+[笔头 --- 你的首席内容官](https://bitou.tech/)
 
-[![deploy bitou.tech to server](https://github.com/Alfred-Lau/bitou.tech/actions/workflows/docker-cdn.yml/badge.svg)](https://github.com/Alfred-Lau/bitou.tech/actions/workflows/docker-cdn.yml)
+![](https://render.bitou.tech/imgs/iShot_2024-07-08_22.06.21.png)
