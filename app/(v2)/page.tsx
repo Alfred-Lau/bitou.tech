@@ -14,16 +14,6 @@ import ReadyToGo from './components/readytogo';
 import User from './components/user';
 
 export default async function Home() {
-  const cks = cookies();
-
-  const { data: userInfo } = await getUserInfoURL(
-    {},
-    {
-      headers: {
-        authorization: cks.get("authorization")?.value,
-      },
-    }
-  );
   return (
     <div>
       <div>
@@ -39,7 +29,7 @@ export default async function Home() {
             </div>
 
             <div>
-              <Link href={"https://work.bitou.tech"}>
+              <Link href={'https://work.bitou.tech'}>
                 <div className="bg-[#E50F8D] px-[42px] py-[15px] text-white rounded-[40px] mt-[12px]">
                   Start Now
                 </div>

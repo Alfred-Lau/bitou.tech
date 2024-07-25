@@ -1,10 +1,10 @@
 import Image from 'next/image';
 
 const customs = Array.from({ length: 6 }).map((_, i) => ({
-  avatar: "https://render.bitou.tech/imgs/avatar-for.png",
-  name: "Anna Spronio",
+  avatar: 'https://render.bitou.tech/imgs/avatar-for.png',
+  name: 'Anna Spronio',
   quote:
-    "Sed eu in tincidunt arcu et faucibus a. Arcu, risus sapien ac odio ipsum risus imperdiet.",
+    'Sed eu in tincidunt arcu et faucibus a. Arcu, risus sapien ac odio ipsum risus imperdiet.',
   star: 4,
 }));
 
@@ -13,12 +13,15 @@ export default function Custom() {
     <div className=" bg-[#FBFBFB]">
       <div className="container-v2 flex items-center flex-col">
         <div>Trusted By 200 Users ***</div>
-        <div className="text-[42px] font-[700] leading-[50px]">
+        <div className="text-3xl font-[700]  md:text-[42px] md:font-[700] md:leading-[50px]">
           These Customs Trust Us.
         </div>
         <div className="flex flex-wrap gap-[16px] my-[69px]">
           {customs.map((custom) => (
-            <div key={custom.name} className="w-[calc((100%-16px)/2)] bg-white">
+            <div
+              key={custom.name}
+              className="w-full md:w-[calc((100%-16px)/2)] bg-white"
+            >
               <div className="flex p-[24px] items-center">
                 <Image
                   src={custom.avatar}
@@ -26,7 +29,7 @@ export default function Custom() {
                   width={80}
                   height={80}
                   style={{
-                    height: "80px",
+                    height: '80px',
                   }}
                 />
                 <div className="ml-[10px]">

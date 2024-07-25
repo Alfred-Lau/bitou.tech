@@ -1,34 +1,32 @@
-"use client";
+'use client';
 
-import React from "react";
+import React from 'react';
 
-import { getUserInfoURL } from "@/app/api/user";
+import { getUserInfoURL } from '@/app/api/user';
 
 export default function Product() {
   const Products = [
     {
       id: 0,
-      title: "bitou AI 平台",
-      btnText: "开始使用",
-      img: "",
-      link: "https://work.bitou.tech",
+      title: 'bitou AI 平台',
+      btnText: '开始使用',
+      img: '',
+      link: 'https://work.bitou.tech',
     },
     {
       id: 1,
-      title: "bitou AI 内容客户端",
-      btnText: "下载试用",
-      link: "https://work.bitou.tech",
-      img: "",
-      handler: async () => {
-        const user = await getUserInfoURL({}, {});
-      },
+      title: 'bitou AI 内容客户端',
+      btnText: '下载试用',
+      link: 'https://work.bitou.tech',
+      img: '',
+      handler: async () => {},
     },
     {
       id: 2,
-      title: "博客",
-      btnText: "浏览",
-      img: "",
-      link: "https://datafun.bitou.tech",
+      title: '博客',
+      btnText: '浏览',
+      img: '',
+      link: 'https://datafun.bitou.tech',
     },
   ];
   return (

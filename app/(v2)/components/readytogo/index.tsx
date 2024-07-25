@@ -5,11 +5,11 @@ export default function ReadyToGo() {
     <div className="container-v2">
       <div className="bg-[#FBFBFB] py-[97px] flex flex-col items-center">
         <div>Trusted By 200 Users ***</div>
-        <div className="text-[42px] font-[700] leading-[50px]">
+        <div className="text-3xl font-[700]  md:text-[42px] md:font-[700] md:leading-[50px]">
           Ready To Get Started ?
         </div>
 
-        <div className="my-[10px]">
+        <div className="my-[10px] text-center">
           make online creation and keep track of all your sparkles.
         </div>
 
