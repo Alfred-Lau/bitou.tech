@@ -1,17 +1,14 @@
-import React from 'react';
+import React from "react";
 
-import { cookies } from 'next/headers';
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 
-import { getUserInfoURL } from '@/app/api/user';
-
-import Brand from './components/brand';
-import Custom from './components/custom';
-import Feature from './components/feature';
-import Nav from './components/nav';
-import ReadyToGo from './components/readytogo';
-import User from './components/user';
+import Brand from "./components/brand";
+import Custom from "./components/custom";
+import Feature from "./components/feature";
+import Nav from "./components/nav";
+import ReadyToGo from "./components/readytogo";
+import User from "./components/user";
 
 export default async function Home() {
   return (
@@ -29,7 +26,7 @@ export default async function Home() {
             </div>
 
             <div>
-              <Link href={'https://work.bitou.tech'}>
+              <Link href={"https://work.bitou.tech"}>
                 <div className="bg-[#E50F8D] px-[42px] py-[15px] text-white rounded-[40px] mt-[12px]">
                   Start Now
                 </div>
