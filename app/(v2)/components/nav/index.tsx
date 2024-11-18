@@ -1,9 +1,9 @@
-import React from 'react';
-
-import Image from 'next/image';
-import Link from 'next/link';
-
-import I18n from '../i18n';
+"use client";
+import React, { useEffect, useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import I18n from "../i18n";
+import { getUserInfoURL } from "@/app/api/user";
 
 const ROUTE = [
   {
@@ -24,9 +24,20 @@ const ROUTE = [
   // },
 ];
 
-export default async function Nav(props) {
-  const { textColor, data } = props;
+export default function Nav(props) {
+  const { textColor } = props;
+  const [userInfo, setUserInfo] = useState(null);
   const textWhite = textColor || "text-white";
+
+  async function getUserInfo() {
+    const { data } = await getUserInfoURL();
+    console.log("🚀 ~ Home ~ data:", data);
+    setUserInfo(data);
+  }
+
+  useEffect(() => {
+    getUserInfo();
+  }, []);
 
   return (
     <div className="flex p-[6px_8px] md:w-[1090px] md:m-[auto] md:pt-[48px] ">
@@ -66,10 +77,21 @@ export default async function Nav(props) {
           <I18n></I18n>
         </div>
         <div>
-          {data ? (
-            <span>{data.username}</span>
+          {userInfo ? (
+            <span>{userInfo.username}</span>
           ) : (
-            <span className="hover:cursor-pointer">Login</span>
+            <span
+              className="hover:cursor-pointer"
+              onClick={() => {
+                // 登录后重定向到当前页面
+                window.location.href =
+                  process.env.NODE_ENV === "development"
+                    ? `http://localhost:8000?redirect=${window.location.href}`
+                    : `https://work.bitou.tech?redirect=${window.location.href}`;
+              }}
+            >
+              Login
+            </span>
           )}
         </div>
       </div>

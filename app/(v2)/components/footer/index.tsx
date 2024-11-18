@@ -1,3 +1,14 @@
+import {
+  FacebookOutlined,
+  XOutlined,
+  LinkedinOutlined,
+  InstagramOutlined,
+  RedditOutlined,
+  DribbbleOutlined,
+  MediumOutlined,
+  DiscordOutlined,
+} from "@ant-design/icons";
+
 export default function Footer() {
   return (
     <footer className="bg-white text-black">
@@ -8,38 +19,45 @@ export default function Footer() {
             <div className="flex flex-col">
               <h3>Product</h3>
               <a href="">Home</a>
-              <a href="">About</a>
-              <a href="">Services</a>
-              <a href="">Contact</a>
+              <a href="">docs</a>
+              <a href="">blog</a>
+              <a href="">contact</a>
             </div>
             <div className="flex flex-col">
               <h3>Product</h3>
-              <a href="">Home</a>
-              <a href="">About</a>
-              <a href="">Services</a>
-              <a href="">Contact</a>
+              <a href="">bitou extension</a>
+              <a href="">bitou vscode extension</a>
+              <a href="">bitou studio</a>
+              <a href="">others</a>
             </div>
-            <div className="flex flex-col">
-              <a href="">Facebook</a>
-              <a href="">Twitter</a>
-              <a href="">LinkedIn</a>
-              <a href="">Instagram</a>
-            </div>
-            <div className="flex flex-col">
-              <h3>Product</h3>
-              <a href="">Home</a>
-              <a href="">About</a>
-              <a href="">Services</a>
-              <a href="">Contact</a>
+            <div className="flex flex-row gap-4 ">
+              {[
+                { href: "", icon: <FacebookOutlined /> },
+                { href: "", icon: <XOutlined /> },
+                { href: "", icon: <LinkedinOutlined /> },
+                { href: "", icon: <InstagramOutlined /> },
+                { href: "", icon: <RedditOutlined /> },
+                { href: "", icon: <DribbbleOutlined /> },
+                { href: "", icon: <MediumOutlined /> },
+                { href: "", icon: <DiscordOutlined /> },
+              ].map((link, index) => (
+                <a
+                  key={index}
+                  href={link.href}
+                  className="text-2xl hover:cursor-pointer hover:text-blue-500 hover:underline"
+                >
+                  {link.icon}
+                </a>
+              ))}
             </div>
           </div>
         </div>
       </div>
-      {/* coprtight */}
+      {/* copyright */}
       <div>
-        <div className="w-full h-[1px] bg-[#ccc]"></div>
+        <div className="w-full h-[1px] bg-[#eee]"></div>
       </div>
-      <div className="container-v2 bg-white text-black">
+      <div className=" bg-white text-black">
         <div className="flex justify-center items-center py-4">
           <div>
             <p>© 2024 Bitou Tech</p>

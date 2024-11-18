@@ -10,6 +10,7 @@
     "predev": "echo \"[INFO] Starting development server...\""
   },
   "dependencies": {
+    "@ant-design/icons": "^5.5.1",
     "@radix-ui/react-label": "^2.0.2",
     "@radix-ui/react-slot": "^1.0.2",
     "@types/node": "^20.12.13",

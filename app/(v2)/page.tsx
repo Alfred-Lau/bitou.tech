@@ -52,7 +52,7 @@ const Features = () => (
       desc=" We use data to make your work easier and faster."
     />
     <Feature
-      title="Opensource and Much functionality"
+      title="Open Source and Much functionality"
       desc="cooperate and share with the community, and have more functions."
     />
   </>
