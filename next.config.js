@@ -27,7 +27,7 @@ const nextConfig = {
     return [
       {
         source: "/docs",
-        destination: "/docs/introduction/what-is-bitou/",
+        destination: "https://docs.bitou.tech/",
         permanent: true,
       },
     ];
