@@ -26,12 +26,11 @@ const ROUTE = [
 
 export default function Nav(props) {
   const { textColor } = props;
-  const [userInfo, setUserInfo] = useState(null);
+  const [userInfo, setUserInfo] = useState<any>(null);
   const textWhite = textColor || "text-white";
 
   async function getUserInfo() {
     const { data } = await getUserInfoURL();
-    console.log("🚀 ~ Home ~ data:", data);
     setUserInfo(data);
   }
 
@@ -78,7 +77,7 @@ export default function Nav(props) {
         </div>
         <div>
           {userInfo ? (
-            <span>{userInfo.username}</span>
+            <span>{userInfo?.username}</span>
           ) : (
             <span
               className="hover:cursor-pointer"
