@@ -59,19 +59,7 @@ export default function Footer() {
       </div>
       <div className=" bg-white text-black">
         <div className="flex justify-center items-center py-4">
-          <div>
-            <p>© 2024 Bitou Tech</p>
-          </div>
-          <span className="mx-2">|</span>
-          <div>
-            <a href="" className="text-black">
-              Privacy Policy
-            </a>
-            <span className="mx-2">|</span>
-            <a href="" className="text-black">
-              Terms of Service
-            </a>
-          </div>
+          <a href="https://beian.miit.gov.cn/" target="_blank">浙ICP备2023025627号-1</a>
         </div>
       </div>
     </footer>
