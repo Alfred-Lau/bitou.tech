@@ -11,7 +11,7 @@ import Footer from './components/footer';
 
 const meta = {
   title:
-    "Bitou - Your Chief Content Officer - Focus on Online Content Creation and Sharing",
+    "笔头站点",
   description:
     "Your sharing deserves to be seen by time. Focusing on the entire lifecycle of full-link traffic and content, Bitou specializes in online content creation and sharing.",
   keywords: "AI Powered, Data Driven, Bitou",
