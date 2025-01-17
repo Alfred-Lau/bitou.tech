@@ -70,7 +70,7 @@ export default function Footer() {
           </div>
           <Divider />
           <div className={styles.beian}>
-            <a href="https://beian.miit.gov.cn">浙ICP备2023025627号-1</a>
+            <a href="https://beian.miit.gov.cn" target="_blank">浙ICP备2023025627号-1</a>
           </div>
           <div className={styles.copyright}>2023-present @bitou</div>
         </div>
