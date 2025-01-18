@@ -65,7 +65,6 @@ export default function RootLayout({
         content="Your sharing deserves to be seen by time. Focusing on the entire lifecycle of full-link traffic and content, Bitou specializes in online content creation and sharing."
       />
       <link rel="icon" href="/favicon.png" sizes="any" />
-      <Script src="https://bitou-tracert.oss-cn-hangzhou.aliyuncs.com/index.browser.js"></Script>
       <body>
         {children}
         <Footer></Footer>
